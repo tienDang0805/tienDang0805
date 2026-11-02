@@ -1,0 +1,153 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 390" width="100%" height="100%">
+  <defs>
+    <linearGradient id="bgWork" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#090b0d"/>
+      <stop offset="100%" stop-color="#0d1013"/>
+    </linearGradient>
+  </defs>
+
+  <!-- Container -->
+  <rect width="1200" height="390" rx="18" fill="url(#bgWork)"/>
+  <rect x="0.75" y="0.75" width="1198.5" height="388.5" rx="17.25" fill="none" stroke="#2a3134" stroke-width="1.5"/>
+
+  <!-- Section Kicker: 01 MOBILE / NHỮNG VIỆC ĐÃ LÀM -->
+  <g transform="translate(36, 36)">
+    <text x="0" y="0" font-family="'JetBrains Mono', ui-monospace, monospace" font-size="11.5" font-weight="700" letter-spacing="0.8">
+      <tspan fill="#85bcf5">01</tspan>
+      <tspan dx="8" fill="#a2aaa9">MOBILE / NHỮNG VIỆC ĐÃ LÀM TẠI SOUTHTELECOM &amp; DỰ ÁN CÁ NHÂN</tspan>
+    </text>
+    <text x="1128" y="0" text-anchor="end" fill="#86e8da" font-family="'JetBrains Mono', ui-monospace, monospace" font-size="11.5">
+      devtiendang.blog/#work ↗
+    </text>
+  </g>
+
+  <!-- ==================== 3 SELECTED WORK CARDS (01, 02, 03) ==================== -->
+  <!-- Card 01: Mint (#86e8da) - Multi-barcode & Multi-box SDK -->
+  <g transform="translate(36, 56)">
+    <rect width="358" height="236" rx="16" fill="#101315" stroke="#2a3134" stroke-width="1.2"/>
+    <line x1="18" y1="1" x2="140" y2="1" stroke="#86e8da" stroke-width="2"/>
+    <text x="22" y="30" fill="#86e8da" font-family="'JetBrains Mono', ui-monospace, monospace" font-size="10.5" font-weight="700" letter-spacing="0.6">
+      01 / ANDROID · ON-DEVICE AI
+    </text>
+    <text x="22" y="60" fill="#f0f2f0" font-family="'Be Vietnam Pro', -apple-system, sans-serif" font-size="18.5" font-weight="700">
+      Multi-barcode &amp; Multi-box SDK
+    </text>
+    <text x="22" y="88" fill="#a2aaa9" font-family="'Be Vietnam Pro', -apple-system, sans-serif" font-size="12.5">
+      <tspan x="22" dy="0">SDK Android bằng </tspan><tspan fill="#f0f2f0" font-weight="600">Kotlin</tspan><tspan>: model </tspan><tspan fill="#f0f2f0" font-weight="600">TFLite</tspan>
+      <tspan x="22" dy="20">nhận diện 10+ hộp sản phẩm và </tspan><tspan fill="#f0f2f0" font-weight="600">ML Kit</tspan><tspan> đọc nhiều</tspan>
+      <tspan x="22" dy="20">barcode trong ~50ms/frame (30 FPS).</tspan>
+    </text>
+    <!-- Visual Pipeline Box -->
+    <rect x="22" y="144" width="314" height="38" rx="8" fill="#181d20" stroke="#86e8da" stroke-opacity="0.28"/>
+    <text x="179" y="167" text-anchor="middle" fill="#86e8da" font-family="'JetBrains Mono', ui-monospace, monospace" font-size="11" font-weight="600">
+      FRAME  →  TensorFlow Lite  →  ML Kit (30 FPS)
+    </text>
+    <!-- Multi-colored Tags (Mint, Blue, Purple, Amber, Rose) -->
+    <g transform="translate(22, 196)" font-family="'JetBrains Mono', ui-monospace, monospace" font-size="10">
+      <rect x="0" y="0" width="54" height="22" rx="11" fill="#112220" stroke="#86e8da" stroke-opacity="0.4"/>
+      <text x="27" y="14.5" text-anchor="middle" fill="#86e8da">Kotlin</text>
+      <rect x="60" y="0" width="56" height="22" rx="11" fill="#121e2b" stroke="#85bcf5" stroke-opacity="0.4"/>
+      <text x="88" y="14.5" text-anchor="middle" fill="#85bcf5">TFLite</text>
+      <rect x="122" y="0" width="56" height="22" rx="11" fill="#1b1726" stroke="#c5a0f0" stroke-opacity="0.4"/>
+      <text x="150" y="14.5" text-anchor="middle" fill="#c5a0f0">ML Kit</text>
+      <rect x="184" y="0" width="66" height="22" rx="11" fill="#221c13" stroke="#e8bd75" stroke-opacity="0.4"/>
+      <text x="217" y="14.5" text-anchor="middle" fill="#e8bd75">CameraX</text>
+      <rect x="256" y="0" width="56" height="22" rx="11" fill="#24151c" stroke="#f19cb8" stroke-opacity="0.4"/>
+      <text x="284" y="14.5" text-anchor="middle" fill="#f19cb8">Maven</text>
+    </g>
+  </g>
+
+  <!-- Card 02: Sky Blue (#85bcf5) - React Native & Mobile Systems -->
+  <g transform="translate(421, 56)">
+    <rect width="358" height="236" rx="16" fill="#101315" stroke="#2a3134" stroke-width="1.2"/>
+    <line x1="18" y1="1" x2="140" y2="1" stroke="#85bcf5" stroke-width="2"/>
+    <text x="22" y="30" fill="#85bcf5" font-family="'JetBrains Mono', ui-monospace, monospace" font-size="10.5" font-weight="700" letter-spacing="0.6">
+      02 / MOBILE · SYSTEMS
+    </text>
+    <text x="22" y="60" fill="#f0f2f0" font-family="'Be Vietnam Pro', -apple-system, sans-serif" font-size="18.5" font-weight="700">
+      React Native &amp; Mobile Systems
+    </text>
+    <text x="22" y="88" fill="#a2aaa9" font-family="'Be Vietnam Pro', -apple-system, sans-serif" font-size="12.5">
+      <tspan x="22" dy="0">Ứng dụng CRM B2B cho vận hành, analytics SDK</tspan>
+      <tspan x="22" dy="20">hỗ trợ hàng đợi </tspan><tspan fill="#f0f2f0" font-weight="600">offline</tspan><tspan> (0% mất sự kiện khi</tspan>
+      <tspan x="22" dy="20">rớt mạng) và nâng cấp kiến trúc </tspan><tspan fill="#f0f2f0" font-weight="600">React Native</tspan><tspan>.</tspan>
+    </text>
+    <!-- Visual Pipeline Box -->
+    <rect x="22" y="144" width="314" height="38" rx="8" fill="#181d20" stroke="#85bcf5" stroke-opacity="0.28"/>
+    <text x="179" y="167" text-anchor="middle" fill="#85bcf5" font-family="'JetBrains Mono', ui-monospace, monospace" font-size="11" font-weight="600">
+      JS  ↔  OFFLINE QUEUE  ↗  SYNC  ↔  NATIVE
+    </text>
+    <!-- Tags -->
+    <g transform="translate(22, 196)" font-family="'JetBrains Mono', ui-monospace, monospace" font-size="10">
+      <rect x="0" y="0" width="96" height="22" rx="11" fill="#112220" stroke="#86e8da" stroke-opacity="0.4"/>
+      <text x="48" y="14.5" text-anchor="middle" fill="#86e8da">React Native</text>
+      <rect x="104" y="0" width="98" height="22" rx="11" fill="#121e2b" stroke="#85bcf5" stroke-opacity="0.4"/>
+      <text x="153" y="14.5" text-anchor="middle" fill="#85bcf5">Offline Queue</text>
+      <rect x="210" y="0" width="90" height="22" rx="11" fill="#1b1726" stroke="#c5a0f0" stroke-opacity="0.4"/>
+      <text x="255" y="14.5" text-anchor="middle" fill="#c5a0f0">Hermes · JSI</text>
+    </g>
+  </g>
+
+  <!-- Card 03: Warm Amber (#e8bd75) - Robot App & SDK Integration -->
+  <g transform="translate(806, 56)">
+    <rect width="358" height="236" rx="16" fill="#101315" stroke="#2a3134" stroke-width="1.2"/>
+    <line x1="18" y1="1" x2="140" y2="1" stroke="#e8bd75" stroke-width="2"/>
+    <text x="22" y="30" fill="#e8bd75" font-family="'JetBrains Mono', ui-monospace, monospace" font-size="10.5" font-weight="700" letter-spacing="0.6">
+      03 / ANDROID · ROBOT
+    </text>
+    <text x="22" y="60" fill="#f0f2f0" font-family="'Be Vietnam Pro', -apple-system, sans-serif" font-size="18.5" font-weight="700">
+      Robot App &amp; SDK Integration
+    </text>
+    <text x="22" y="88" fill="#a2aaa9" font-family="'Be Vietnam Pro', -apple-system, sans-serif" font-size="12.5">
+      <tspan x="22" dy="0">Giao diện </tspan><tspan fill="#f0f2f0" font-weight="600">React Native</tspan><tspan> (60 FPS), bridge</tspan>
+      <tspan x="22" dy="20"></tspan><tspan fill="#f0f2f0" font-weight="600">Android/Java</tspan><tspan> kết nối trực tiếp SDK phần cứng</tspan>
+      <tspan x="22" dy="20">của nhà sản xuất robot trên thiết bị thật.</tspan>
+    </text>
+    <!-- Visual Pipeline Box -->
+    <rect x="22" y="144" width="314" height="38" rx="8" fill="#181d20" stroke="#e8bd75" stroke-opacity="0.28"/>
+    <text x="179" y="167" text-anchor="middle" fill="#e8bd75" font-family="'JetBrains Mono', ui-monospace, monospace" font-size="11" font-weight="600">
+      RN UI (60 FPS)  →  Java Bridge  →  Vendor SDK
+    </text>
+    <!-- Tags -->
+    <g transform="translate(22, 196)" font-family="'JetBrains Mono', ui-monospace, monospace" font-size="10">
+      <rect x="0" y="0" width="98" height="22" rx="11" fill="#112220" stroke="#86e8da" stroke-opacity="0.4"/>
+      <text x="49" y="14.5" text-anchor="middle" fill="#86e8da">Android / Java</text>
+      <rect x="106" y="0" width="96" height="22" rx="11" fill="#221c13" stroke="#e8bd75" stroke-opacity="0.4"/>
+      <text x="154" y="14.5" text-anchor="middle" fill="#e8bd75">Native Bridge</text>
+      <rect x="210" y="0" width="88" height="22" rx="11" fill="#24151c" stroke="#f19cb8" stroke-opacity="0.4"/>
+      <text x="254" y="14.5" text-anchor="middle" fill="#f19cb8">Vendor SDK</text>
+    </g>
+  </g>
+
+  <!-- ==================== BOTTOM BAR: AGENTIC CODING FLOW (AgenticCodingFlow.tsx) ==================== -->
+  <g transform="translate(36, 310)">
+    <rect width="1128" height="54" rx="12" fill="#101315" stroke="#2a3134" stroke-width="1"/>
+    <text x="22" y="31" font-family="'JetBrains Mono', ui-monospace, monospace" font-size="11.5" font-weight="700">
+      <tspan fill="#c5a0f0">↻ DEVELOPMENT / WORKFLOW</tspan>
+      <tspan dx="12" fill="#f0f2f0">Agentic coding:</tspan>
+      <tspan dx="6" fill="#c5a0f0">Antigravity</tspan>
+      <tspan dx="4" fill="#a2aaa9">/</tspan>
+      <tspan dx="4" fill="#86e8da">Codex</tspan>
+    </text>
+
+    <!-- 01 plan to 02 build to 03 review to 04 verify -->
+    <g transform="translate(560, 14)" font-family="'JetBrains Mono', ui-monospace, monospace" font-size="11">
+      <rect x="0" y="0" width="86" height="26" rx="6" fill="#1b1726" stroke="#c5a0f0" stroke-opacity="0.5"/>
+      <text x="43" y="17" text-anchor="middle" fill="#c5a0f0" font-weight="600">01 plan ↗</text>
+
+      <text x="98" y="17" fill="#a2aaa9">→</text>
+      <rect x="116" y="0" width="86" height="26" rx="6" fill="#121e2b" stroke="#85bcf5" stroke-opacity="0.5"/>
+      <text x="159" y="17" text-anchor="middle" fill="#85bcf5" font-weight="600">02 build</text>
+
+      <text x="214" y="17" fill="#a2aaa9">→</text>
+      <rect x="232" y="0" width="92" height="26" rx="6" fill="#112220" stroke="#86e8da" stroke-opacity="0.5"/>
+      <text x="278" y="17" text-anchor="middle" fill="#86e8da" font-weight="600">03 review</text>
+
+      <text x="336" y="17" fill="#a2aaa9">→</text>
+      <rect x="354" y="0" width="92" height="26" rx="6" fill="#221c13" stroke="#e8bd75" stroke-opacity="0.5"/>
+      <text x="400" y="17" text-anchor="middle" fill="#e8bd75" font-weight="600">04 verify</text>
+
+      <text x="548" y="17" text-anchor="end" fill="#f19cb8" font-size="10.5">context → artifact</text>
+    </g>
+  </g>
+</svg>
