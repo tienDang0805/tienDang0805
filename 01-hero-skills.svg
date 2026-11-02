@@ -1,0 +1,234 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 390" width="100%" height="100%">
+  <defs>
+    <linearGradient id="bg01" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#090b0d"/>
+      <stop offset="55%" stop-color="#0d1114"/>
+      <stop offset="100%" stop-color="#090b0d"/>
+    </linearGradient>
+    <linearGradient id="headGrad" x1="0%" y1="0%" x2="100%" y2="15%">
+      <stop offset="0%" stop-color="#a2aaa9">
+        <animate attributeName="stop-color" values="#a2aaa9;#f0f2f0;#a2aaa9" dur="5s" repeatCount="indefinite"/>
+      </stop>
+      <stop offset="48%" stop-color="#f0f2f0"/>
+      <stop offset="95%" stop-color="#86e8da">
+        <animate attributeName="stop-color" values="#86e8da;#36f5ed;#86e8da" dur="5s" repeatCount="indefinite"/>
+      </stop>
+    </linearGradient>
+    <radialGradient id="glowMint" cx="74%" cy="46%" r="44%">
+      <stop offset="0%" stop-color="#36f5ed" stop-opacity="0.14">
+        <animate attributeName="stop-opacity" values="0.10;0.20;0.10" dur="4s" repeatCount="indefinite"/>
+      </stop>
+      <stop offset="60%" stop-color="#85bcf5" stop-opacity="0.05"/>
+      <stop offset="100%" stop-color="#090b0d" stop-opacity="0"/>
+    </radialGradient>
+    <linearGradient id="layer1Bg" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#15302d"/>
+      <stop offset="100%" stop-color="#0d1b1a"/>
+    </linearGradient>
+    <linearGradient id="layer2Bg" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#15293d"/>
+      <stop offset="100%" stop-color="#0e1926"/>
+    </linearGradient>
+    <linearGradient id="layer3Bg" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#231c35"/>
+      <stop offset="100%" stop-color="#14101f"/>
+    </linearGradient>
+    <linearGradient id="layer4Bg" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#2c2316"/>
+      <stop offset="100%" stop-color="#18130c"/>
+    </linearGradient>
+    <pattern id="grid01" width="28" height="28" patternUnits="userSpaceOnUse">
+      <path d="M 28 0 L 0 0 0 28" fill="none" stroke="#86e8da" stroke-width="0.6" stroke-opacity="0.09"/>
+    </pattern>
+  </defs>
+
+  <!-- Outer Card -->
+  <rect width="1200" height="390" rx="16" fill="url(#bg01)"/>
+  <rect width="1200" height="390" rx="16" fill="url(#glowMint)"/>
+  <rect x="0.75" y="0.75" width="1198.5" height="388.5" rx="15.25" fill="none" stroke="#2a3134" stroke-width="1.5"/>
+
+  <!-- LEFT COLUMN: HERO AND SIMPLE BIO -->
+  <g transform="translate(40, 42)">
+    <!-- Pulsing Mint Radar Dot + Kicker -->
+    <circle cx="8" cy="8" r="4" fill="#86e8da" fill-opacity="0.25">
+      <animate attributeName="r" values="4;11;4" dur="2.4s" repeatCount="indefinite"/>
+      <animate attributeName="fill-opacity" values="0.4;0.05;0.4" dur="2.4s" repeatCount="indefinite"/>
+    </circle>
+    <circle cx="8" cy="8" r="3.5" fill="#86e8da"/>
+    <text x="24" y="12" fill="#a2aaa9" font-family="'Courier New', monospace" font-size="12" font-weight="700" letter-spacing="1.2">
+      DANG VAN TIEN · HO CHI MINH CITY, VIETNAM
+    </text>
+
+    <!-- Live 60 FPS Telemetry Pill -->
+    <g transform="translate(342, -4)">
+      <rect width="128" height="24" rx="12" fill="#101719" stroke="#86e8da" stroke-opacity="0.4" stroke-width="1"/>
+      <circle cx="14" cy="12" r="3" fill="#36f5ed">
+        <animate attributeName="opacity" values="1;0.25;1" dur="1.2s" repeatCount="indefinite"/>
+      </circle>
+      <text x="24" y="16" fill="#86e8da" font-family="'Courier New', monospace" font-size="11" font-weight="700">60 FPS · LIVE</text>
+    </g>
+
+    <!-- Main Two-Line Gradient Headline -->
+    <text x="0" y="72" fill="#f0f2f0" font-family="'Be Vietnam Pro', -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Helvetica, Arial, sans-serif" font-size="48" font-weight="800" letter-spacing="-1.5">
+      From the UI.
+    </text>
+    <text x="0" y="128" fill="url(#headGrad)" font-family="'Be Vietnam Pro', -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Helvetica, Arial, sans-serif" font-size="48" font-weight="800" letter-spacing="-1.5">
+      To the native layer.
+    </text>
+
+    <!-- Simple Bio Box with Blinking Terminal Cursor -->
+    <g transform="translate(0, 152)">
+      <rect width="468" height="38" rx="8" fill="#112220" stroke="#86e8da" stroke-opacity="0.5" stroke-width="1.2"/>
+      <text x="14" y="24" fill="#86e8da" font-family="'Courier New', monospace" font-size="13.5" font-weight="700">
+        &gt; Mobile dev 3.5 YOE , react native , android kotlin
+      </text>
+      <rect x="444" y="11" width="7" height="16" fill="#36f5ed">
+        <animate attributeName="opacity" values="1;0;1" dur="1s" repeatCount="indefinite"/>
+      </rect>
+    </g>
+
+    <!-- Short Personal Intro (No Company Projects) -->
+    <text x="0" y="218" fill="#a2aaa9" font-family="'Be Vietnam Pro', -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Helvetica, Arial, sans-serif" font-size="14">
+      <tspan x="0" dy="0">Crafting mobile apps from 60 FPS interfaces, across the </tspan>
+      <tspan fill="#f0f2f0" font-weight="700">JSI / React Native</tspan>
+      <tspan x="0" dy="23">bridge down to </tspan>
+      <tspan fill="#f0f2f0" font-weight="700">Android / Kotlin</tspan>
+      <tspan> and custom </tspan>
+      <tspan fill="#f0f2f0" font-weight="700">Native SDKs</tspan>
+      <tspan>. After hours, I</tspan>
+      <tspan x="0" dy="23">tinker with AI Agents, ship side projects, and write deep-dive notes.</tspan>
+    </text>
+
+    <!-- CTA Buttons -->
+    <g transform="translate(0, 282)">
+      <rect x="0" y="0" width="194" height="42" rx="8" fill="#36f5ed">
+        <animate attributeName="fill-opacity" values="1;0.86;1" dur="2.8s" repeatCount="indefinite"/>
+      </rect>
+      <text x="97" y="26" text-anchor="middle" fill="#062b29" font-family="'Be Vietnam Pro', -apple-system, BlinkMacSystemFont, 'Segoe UI', Arial, sans-serif" font-size="13.5" font-weight="800">
+        devtiendang.blog -&gt;
+      </text>
+
+      <rect x="208" y="0" width="188" height="42" rx="8" fill="#101315" stroke="#2a3134" stroke-width="1.2"/>
+      <circle cx="228" cy="21" r="4" fill="#c5a0f0">
+        <animate attributeName="opacity" values="1;0.3;1" dur="1.8s" repeatCount="indefinite"/>
+      </circle>
+      <text x="310" y="26" text-anchor="middle" fill="#f0f2f0" font-family="'Be Vietnam Pro', -apple-system, BlinkMacSystemFont, 'Segoe UI', Arial, sans-serif" font-size="13" font-weight="700">
+        Chat with ChatDVT -&gt;
+      </text>
+    </g>
+  </g>
+
+  <!-- RIGHT COLUMN: 01 / 4-LAYER MOBILE ARCHITECTURE AND SKILLS -->
+  <g transform="translate(544, 26)">
+    <!-- Container Backdrop -->
+    <rect x="0" y="0" width="624" height="338" rx="14" fill="#101315" stroke="#2a3134" stroke-width="1.2"/>
+    <rect x="44" y="38" width="564" height="284" rx="10" fill="url(#grid01)"/>
+
+    <!-- Header -->
+    <rect x="18" y="15" width="7" height="7" fill="none" stroke="#e8bd75" stroke-width="1.3" transform="rotate(45 21.5 18.5)"/>
+    <text x="34" y="23" fill="#a2aaa9" font-family="'Be Vietnam Pro', -apple-system, BlinkMacSystemFont, 'Segoe UI', Arial, sans-serif" font-size="11.5" font-weight="700" letter-spacing="0.8">
+      01 / 4-LAYER MOBILE ARCHITECTURE &amp; SKILLS
+    </text>
+    <text x="606" y="23" text-anchor="end" fill="#e8bd75" font-family="'Courier New', monospace" font-size="11.5" font-weight="700">
+      01 TO 04
+    </text>
+
+    <!-- Animated Left Signal Conduit Rail -->
+    <line x1="24" y1="54" x2="24" y2="302" stroke="#2a3134" stroke-width="2"/>
+    <rect x="22" y="54" width="4" height="32" rx="2" fill="#36f5ed">
+      <animate attributeName="y" values="54;274;54" dur="3.6s" repeatCount="indefinite"/>
+    </rect>
+
+    <!-- Node 01 -->
+    <rect x="10" y="52" width="28" height="22" rx="6" fill="#112624" stroke="#86e8da" stroke-width="1.2"/>
+    <text x="24" y="67" text-anchor="middle" fill="#86e8da" font-family="'Courier New', monospace" font-size="10.5" font-weight="700">01</text>
+
+    <!-- Node 02 -->
+    <rect x="10" y="122" width="28" height="22" rx="6" fill="#122233" stroke="#85bcf5" stroke-width="1.2"/>
+    <text x="24" y="137" text-anchor="middle" fill="#85bcf5" font-family="'Courier New', monospace" font-size="10.5" font-weight="700">02</text>
+
+    <!-- Node 03 -->
+    <rect x="10" y="192" width="28" height="22" rx="6" fill="#1e192e" stroke="#c5a0f0" stroke-width="1.2"/>
+    <text x="24" y="207" text-anchor="middle" fill="#c5a0f0" font-family="'Courier New', monospace" font-size="10.5" font-weight="700">03</text>
+
+    <!-- Node 04 -->
+    <rect x="10" y="262" width="28" height="22" rx="6" fill="#272015" stroke="#e8bd75" stroke-width="1.2"/>
+    <text x="24" y="277" text-anchor="middle" fill="#e8bd75" font-family="'Courier New', monospace" font-size="10.5" font-weight="700">04</text>
+
+    <!-- LAYER 01: UI LAYER (Mint #86e8da) -->
+    <g transform="translate(48, 38)">
+      <rect width="558" height="60" rx="10" fill="url(#layer1Bg)" stroke="#86e8da" stroke-opacity="0.65" stroke-width="1.2">
+        <animate attributeName="stroke-opacity" values="0.45;0.95;0.45" dur="3.6s" begin="0s" repeatCount="indefinite"/>
+      </rect>
+      <text x="16" y="22" fill="#86e8da" font-family="'Courier New', monospace" font-size="10.5" font-weight="700">01 // UI LAYER · 60 FPS</text>
+      <text x="16" y="44" fill="#f0f2f0" font-family="'Be Vietnam Pro', -apple-system, BlinkMacSystemFont, 'Segoe UI', Arial, sans-serif" font-size="16" font-weight="700">App Interface &amp; Motion</text>
+      <!-- Animated 60fps Mini Bars + Pill -->
+      <g transform="translate(284, 14)">
+        <rect x="0" y="14" width="4" height="18" rx="2" fill="#86e8da">
+          <animate attributeName="height" values="10;24;10" dur="0.9s" repeatCount="indefinite"/>
+          <animate attributeName="y" values="22;8;22" dur="0.9s" repeatCount="indefinite"/>
+        </rect>
+        <rect x="8" y="8" width="4" height="24" rx="2" fill="#36f5ed">
+          <animate attributeName="height" values="24;12;24" dur="0.9s" repeatCount="indefinite"/>
+          <animate attributeName="y" values="8;20;8" dur="0.9s" repeatCount="indefinite"/>
+        </rect>
+        <rect x="16" y="12" width="4" height="20" rx="2" fill="#86e8da">
+          <animate attributeName="height" values="14;26;14" dur="0.7s" repeatCount="indefinite"/>
+          <animate attributeName="y" values="18;6;18" dur="0.7s" repeatCount="indefinite"/>
+        </rect>
+      </g>
+      <rect x="322" y="15" width="220" height="30" rx="6" fill="#091312" stroke="#86e8da" stroke-opacity="0.35"/>
+      <text x="432" y="34" text-anchor="middle" fill="#86e8da" font-family="'Courier New', monospace" font-size="11" font-weight="700">Reanimated · Gesture · Nav</text>
+    </g>
+
+    <!-- LAYER 02: CROSS-PLATFORM (Blue #85bcf5) -->
+    <g transform="translate(48, 108)">
+      <rect width="558" height="60" rx="10" fill="url(#layer2Bg)" stroke="#85bcf5" stroke-opacity="0.65" stroke-width="1.2">
+        <animate attributeName="stroke-opacity" values="0.45;0.95;0.45" dur="3.6s" begin="0.9s" repeatCount="indefinite"/>
+      </rect>
+      <text x="16" y="22" fill="#85bcf5" font-family="'Courier New', monospace" font-size="10.5" font-weight="700">02 // CROSS-PLATFORM · JSI</text>
+      <text x="16" y="44" fill="#f0f2f0" font-family="'Be Vietnam Pro', -apple-system, BlinkMacSystemFont, 'Segoe UI', Arial, sans-serif" font-size="16" font-weight="700">React Native &amp; JSI Bridge</text>
+      <!-- Animated JSI Packet -->
+      <line x1="274" y1="30" x2="314" y2="30" stroke="#85bcf5" stroke-opacity="0.4" stroke-width="1.5"/>
+      <circle cx="278" cy="30" r="3.5" fill="#85bcf5">
+        <animate attributeName="cx" values="274;314;274" dur="1.6s" repeatCount="indefinite"/>
+      </circle>
+      <rect x="322" y="15" width="220" height="30" rx="6" fill="#09121c" stroke="#85bcf5" stroke-opacity="0.35"/>
+      <text x="432" y="34" text-anchor="middle" fill="#85bcf5" font-family="'Courier New', monospace" font-size="11" font-weight="700">TypeScript · Offline Queue</text>
+    </g>
+
+    <!-- LAYER 03: PLATFORM OS (Purple #c5a0f0) -->
+    <g transform="translate(48, 178)">
+      <rect width="558" height="60" rx="10" fill="url(#layer3Bg)" stroke="#c5a0f0" stroke-opacity="0.65" stroke-width="1.2">
+        <animate attributeName="stroke-opacity" values="0.45;0.95;0.45" dur="3.6s" begin="1.8s" repeatCount="indefinite"/>
+      </rect>
+      <text x="16" y="22" fill="#c5a0f0" font-family="'Courier New', monospace" font-size="10.5" font-weight="700">03 // PLATFORM OS · HARDWARE</text>
+      <text x="16" y="44" fill="#f0f2f0" font-family="'Be Vietnam Pro', -apple-system, BlinkMacSystemFont, 'Segoe UI', Arial, sans-serif" font-size="16" font-weight="700">Android / Kotlin Native</text>
+      <!-- Animated CameraX Scanner Box -->
+      <rect x="278" y="16" width="32" height="28" rx="4" fill="#120e1c" stroke="#c5a0f0" stroke-width="1"/>
+      <line x1="280" y1="20" x2="308" y2="20" stroke="#c5a0f0" stroke-width="1.5">
+        <animate attributeName="y1" values="19;41;19" dur="1.8s" repeatCount="indefinite"/>
+        <animate attributeName="y2" values="19;41;19" dur="1.8s" repeatCount="indefinite"/>
+      </line>
+      <rect x="322" y="15" width="220" height="30" rx="6" fill="#110e1b" stroke="#c5a0f0" stroke-opacity="0.35"/>
+      <text x="432" y="34" text-anchor="middle" fill="#c5a0f0" font-family="'Courier New', monospace" font-size="11" font-weight="700">Kotlin · CameraX · Lifecycle</text>
+    </g>
+
+    <!-- LAYER 04: NATIVE CORE & AI (Amber #e8bd75) -->
+    <g transform="translate(48, 248)">
+      <rect width="558" height="60" rx="10" fill="url(#layer4Bg)" stroke="#e8bd75" stroke-opacity="0.65" stroke-width="1.2">
+        <animate attributeName="stroke-opacity" values="0.45;0.95;0.45" dur="3.6s" begin="2.7s" repeatCount="indefinite"/>
+      </rect>
+      <text x="16" y="22" fill="#e8bd75" font-family="'Courier New', monospace" font-size="10.5" font-weight="700">04 // NATIVE CORE · ON-DEVICE AI</text>
+      <text x="16" y="44" fill="#f0f2f0" font-family="'Be Vietnam Pro', -apple-system, BlinkMacSystemFont, 'Segoe UI', Arial, sans-serif" font-size="16" font-weight="700">Native SDK &amp; Vision AI</text>
+      <!-- Animated Chip Pulse -->
+      <rect x="280" y="17" width="28" height="26" rx="4" fill="#17120a" stroke="#e8bd75" stroke-width="1.2"/>
+      <circle cx="294" cy="30" r="4" fill="#e8bd75">
+        <animate attributeName="r" values="3;6;3" dur="1.5s" repeatCount="indefinite"/>
+        <animate attributeName="opacity" values="1;0.35;1" dur="1.5s" repeatCount="indefinite"/>
+      </circle>
+      <rect x="322" y="15" width="220" height="30" rx="6" fill="#16120b" stroke="#e8bd75" stroke-opacity="0.35"/>
+      <text x="432" y="34" text-anchor="middle" fill="#e8bd75" font-family="'Courier New', monospace" font-size="11" font-weight="700">TFLite · ML Kit · Maven AAR</text>
+    </g>
+  </g>
+</svg>

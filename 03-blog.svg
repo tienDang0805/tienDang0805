@@ -1,0 +1,95 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 268" width="100%" height="100%">
+  <defs>
+    <linearGradient id="bg03" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#090b0d"/>
+      <stop offset="100%" stop-color="#0d1013"/>
+    </linearGradient>
+  </defs>
+
+  <!-- Container -->
+  <rect width="1200" height="268" rx="16" fill="url(#bg03)"/>
+  <rect x="0.75" y="0.75" width="1198.5" height="266.5" rx="15.25" fill="none" stroke="#2a3134" stroke-width="1.5"/>
+
+  <!-- Section Kicker: 03 NOTES / BEHIND THE CODE -->
+  <g transform="translate(32, 32)">
+    <circle cx="6" cy="-4" r="3.5" fill="#f19cb8">
+      <animate attributeName="opacity" values="1;0.3;1" dur="2.2s" repeatCount="indefinite"/>
+    </circle>
+    <text x="18" y="0" fill="#f19cb8" font-family="'Courier New', monospace" font-size="13" font-weight="700">03</text>
+    <text x="44" y="0" fill="#f0f2f0" font-family="'Be Vietnam Pro', -apple-system, BlinkMacSystemFont, 'Segoe UI', Arial, sans-serif" font-size="13" font-weight="800" letter-spacing="0.8">
+      NOTES / BEHIND THE CODE (devtiendang.blog/blog)
+    </text>
+    <text x="1136" y="0" text-anchor="end" fill="#86e8da" font-family="'Be Vietnam Pro', -apple-system, BlinkMacSystemFont, 'Segoe UI', Arial, sans-serif" font-size="12" font-weight="700">
+      All articles -&gt;
+    </text>
+  </g>
+
+  <!-- BLOG CARD 1: AI Agent, Code Harness and MCP -->
+  <g transform="translate(32, 50)">
+    <rect width="364" height="194" rx="14" fill="#101315" stroke="#2a3134" stroke-width="1.2">
+      <animate attributeName="stroke" values="#2a3134;#c5a0f0;#2a3134" dur="6s" begin="0s" repeatCount="indefinite"/>
+    </rect>
+    <rect x="18" y="16" width="88" height="22" rx="5" fill="#1b1726" stroke="#c5a0f0" stroke-opacity="0.5"/>
+    <text x="62" y="31" text-anchor="middle" fill="#c5a0f0" font-family="'Courier New', monospace" font-size="10" font-weight="700">AI · AGENT</text>
+    <text x="346" y="31" text-anchor="end" fill="#a2aaa9" font-family="'Be Vietnam Pro', -apple-system, BlinkMacSystemFont, 'Segoe UI', Arial, sans-serif" font-size="11">Oct 27 · 8 min read</text>
+
+    <text x="18" y="64" fill="#f0f2f0" font-family="'Be Vietnam Pro', -apple-system, BlinkMacSystemFont, 'Segoe UI', Arial, sans-serif" font-size="15.5" font-weight="800">
+      <tspan x="18" dy="0">Demystifying AI Agents, Code</tspan>
+      <tspan x="18" dy="22">Harnesses &amp; MCP Architecture</tspan>
+    </text>
+    <text x="18" y="114" fill="#a2aaa9" font-family="'Be Vietnam Pro', -apple-system, BlinkMacSystemFont, 'Segoe UI', Arial, sans-serif" font-size="12.5">
+      <tspan x="18" dy="0">Why the same LLM feels genius in one IDE</tspan>
+      <tspan x="18" dy="19">and clueless in another, with 50 FPS diagrams.</tspan>
+    </text>
+
+    <text x="18" y="172" fill="#c5a0f0" font-family="'Be Vietnam Pro', -apple-system, BlinkMacSystemFont, 'Segoe UI', Arial, sans-serif" font-size="12" font-weight="800">
+      Read article -&gt;
+    </text>
+  </g>
+
+  <!-- BLOG CARD 2: Gemini 4 Argon on OpenAI Codex -->
+  <g transform="translate(418, 50)">
+    <rect width="364" height="194" rx="14" fill="#101315" stroke="#2a3134" stroke-width="1.2">
+      <animate attributeName="stroke" values="#2a3134;#85bcf5;#2a3134" dur="6s" begin="2s" repeatCount="indefinite"/>
+    </rect>
+    <rect x="18" y="16" width="88" height="22" rx="5" fill="#121e2b" stroke="#85bcf5" stroke-opacity="0.5"/>
+    <text x="62" y="31" text-anchor="middle" fill="#85bcf5" font-family="'Courier New', monospace" font-size="10" font-weight="700">AI · AGENT</text>
+    <text x="346" y="31" text-anchor="end" fill="#a2aaa9" font-family="'Be Vietnam Pro', -apple-system, BlinkMacSystemFont, 'Segoe UI', Arial, sans-serif" font-size="11">Oct 26 · 12 min read</text>
+
+    <text x="18" y="64" fill="#f0f2f0" font-family="'Be Vietnam Pro', -apple-system, BlinkMacSystemFont, 'Segoe UI', Arial, sans-serif" font-size="15.5" font-weight="800">
+      <tspan x="18" dy="0">Running Gemini 4 Argon (High)</tspan>
+      <tspan x="18" dy="22">Inside OpenAI Codex via CLIProxy</tspan>
+    </text>
+    <text x="18" y="114" fill="#a2aaa9" font-family="'Be Vietnam Pro', -apple-system, BlinkMacSystemFont, 'Segoe UI', Arial, sans-serif" font-size="12.5">
+      <tspan x="18" dy="0">Bridging Antigravity models into the</tspan>
+      <tspan x="18" dy="19">Codex MCP harness through CLIProxyAPI.</tspan>
+    </text>
+
+    <text x="18" y="172" fill="#85bcf5" font-family="'Be Vietnam Pro', -apple-system, BlinkMacSystemFont, 'Segoe UI', Arial, sans-serif" font-size="12" font-weight="800">
+      Read article -&gt;
+    </text>
+  </g>
+
+  <!-- BLOG CARD 3: Story of ChatDVT -->
+  <g transform="translate(804, 50)">
+    <rect width="364" height="194" rx="14" fill="#101315" stroke="#2a3134" stroke-width="1.2">
+      <animate attributeName="stroke" values="#2a3134;#f19cb8;#2a3134" dur="6s" begin="4s" repeatCount="indefinite"/>
+    </rect>
+    <rect x="18" y="16" width="96" height="22" rx="5" fill="#24151c" stroke="#f19cb8" stroke-opacity="0.5"/>
+    <text x="66" y="31" text-anchor="middle" fill="#f19cb8" font-family="'Courier New', monospace" font-size="10" font-weight="700">STORYTELLING</text>
+    <text x="346" y="31" text-anchor="end" fill="#a2aaa9" font-family="'Be Vietnam Pro', -apple-system, BlinkMacSystemFont, 'Segoe UI', Arial, sans-serif" font-size="11">Sep 23 · 9 min read</text>
+
+    <text x="18" y="64" fill="#f0f2f0" font-family="'Be Vietnam Pro', -apple-system, BlinkMacSystemFont, 'Segoe UI', Arial, sans-serif" font-size="15.5" font-weight="800">
+      <tspan x="18" dy="0">Why a Mobile Dev Built a 24/7</tspan>
+      <tspan x="18" dy="22">Discord Bot — ChatDVT (Part 1)</tspan>
+    </text>
+    <text x="18" y="114" fill="#a2aaa9" font-family="'Be Vietnam Pro', -apple-system, BlinkMacSystemFont, 'Segoe UI', Arial, sans-serif" font-size="12.5">
+      <tspan x="18" dy="0">Behind the scenes of turning a group-chat</tspan>
+      <tspan x="18" dy="19">joke into a full cloud-hosted AI companion.</tspan>
+    </text>
+
+    <text x="18" y="172" fill="#f19cb8" font-family="'Be Vietnam Pro', -apple-system, BlinkMacSystemFont, 'Segoe UI', Arial, sans-serif" font-size="12" font-weight="800">
+      Read article -&gt;
+    </text>
+  </g>
+</svg>

@@ -1,0 +1,136 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 284" width="100%" height="100%">
+  <defs>
+    <linearGradient id="bg02" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#090b0d"/>
+      <stop offset="100%" stop-color="#0c0f12"/>
+    </linearGradient>
+  </defs>
+
+  <!-- Container -->
+  <rect width="1200" height="284" rx="16" fill="url(#bg02)"/>
+  <rect x="0.75" y="0.75" width="1198.5" height="282.5" rx="15.25" fill="none" stroke="#2a3134" stroke-width="1.5"/>
+
+  <!-- Section Kicker: 02 AFTER HOURS / PERSONAL PROJECTS -->
+  <g transform="translate(32, 32)">
+    <circle cx="6" cy="-4" r="3.5" fill="#e8bd75">
+      <animate attributeName="opacity" values="1;0.3;1" dur="2s" repeatCount="indefinite"/>
+    </circle>
+    <text x="18" y="0" fill="#e8bd75" font-family="'Courier New', monospace" font-size="13" font-weight="700">02</text>
+    <text x="44" y="0" fill="#f0f2f0" font-family="'Be Vietnam Pro', -apple-system, BlinkMacSystemFont, 'Segoe UI', Arial, sans-serif" font-size="13" font-weight="800" letter-spacing="0.8">
+      AFTER HOURS / PERSONAL PROJECTS
+    </text>
+    <text x="1136" y="0" text-anchor="end" fill="#86e8da" font-family="'Courier New', monospace" font-size="12" font-weight="700">
+      devtiendang.blog/apps -&gt;
+    </text>
+  </g>
+
+  <!-- BENTO CARD 1: ChatDVT and devtiendang.blog -->
+  <g transform="translate(32, 50)">
+    <rect width="556" height="208" rx="14" fill="#101315" stroke="#2a3134" stroke-width="1.2"/>
+    <line x1="20" y1="1" x2="180" y2="1" stroke="#e8bd75" stroke-width="2.2"/>
+
+    <!-- Title & Live Badge -->
+    <text x="22" y="34" fill="#f0f2f0" font-family="'Be Vietnam Pro', -apple-system, BlinkMacSystemFont, 'Segoe UI', Arial, sans-serif" font-size="19" font-weight="800">
+      ChatDVT &amp; devtiendang.blog
+    </text>
+    <g transform="translate(372, 14)">
+      <rect width="162" height="26" rx="13" fill="#1c1812" stroke="#e8bd75" stroke-opacity="0.55" stroke-width="1"/>
+      <circle cx="15" cy="13" r="3.5" fill="#86e8da">
+        <animate attributeName="opacity" values="1;0.25;1" dur="1.4s" repeatCount="indefinite"/>
+      </circle>
+      <text x="88" y="17" text-anchor="middle" fill="#e8bd75" font-family="'Courier New', monospace" font-size="10.5" font-weight="700">DISCORD · WEB · EC2</text>
+    </g>
+
+    <!-- Animated Architecture Pipeline Box -->
+    <g transform="translate(22, 52)">
+      <rect width="512" height="44" rx="8" fill="#181d20" stroke="#e8bd75" stroke-opacity="0.3" stroke-width="1"/>
+      <!-- Animated Wire & Packet -->
+      <line x1="56" y1="22" x2="456" y2="22" stroke="#2a3134" stroke-width="2"/>
+      <circle cx="56" cy="22" r="4.5" fill="#36f5ed">
+        <animate attributeName="cx" values="56;456;56" dur="4.2s" repeatCount="indefinite"/>
+      </circle>
+      <!-- 4 Pipeline Nodes -->
+      <rect x="12" y="9" width="106" height="26" rx="5" fill="#090b0d" stroke="#e8bd75" stroke-opacity="0.5"/>
+      <text x="65" y="26" text-anchor="middle" fill="#f0f2f0" font-family="'Courier New', monospace" font-size="10.5" font-weight="700">01 Discord/Web</text>
+
+      <rect x="148" y="9" width="98" height="26" rx="5" fill="#090b0d" stroke="#85bcf5" stroke-opacity="0.5"/>
+      <text x="197" y="26" text-anchor="middle" fill="#85bcf5" font-family="'Courier New', monospace" font-size="10.5" font-weight="700">02 Node.js</text>
+
+      <rect x="276" y="9" width="98" height="26" rx="5" fill="#090b0d" stroke="#c5a0f0" stroke-opacity="0.5"/>
+      <text x="325" y="26" text-anchor="middle" fill="#c5a0f0" font-family="'Courier New', monospace" font-size="10.5" font-weight="700">03 Prisma</text>
+
+      <rect x="402" y="9" width="98" height="26" rx="5" fill="#090b0d" stroke="#86e8da" stroke-opacity="0.6"/>
+      <text x="451" y="26" text-anchor="middle" fill="#86e8da" font-family="'Courier New', monospace" font-size="10.5" font-weight="700">04 Gemini AI</text>
+    </g>
+
+    <!-- Description -->
+    <text x="22" y="122" fill="#a2aaa9" font-family="'Be Vietnam Pro', -apple-system, BlinkMacSystemFont, 'Segoe UI', Arial, sans-serif" font-size="13">
+      <tspan x="22" dy="0">24/7 Discord AI bot and web portal hosted on AWS EC2. Supports multimodal chat,</tspan>
+      <tspan x="22" dy="21">vision/video analysis, real-time Socket.IO interactive rooms, and RPG mini-games.</tspan>
+    </text>
+
+    <!-- Footer -->
+    <line x1="22" y1="164" x2="534" y2="164" stroke="#2a3134" stroke-width="1"/>
+    <text x="22" y="188" fill="#a2aaa9" font-family="'Courier New', monospace" font-size="11" font-weight="700">
+      TypeScript · discord.js · Socket.IO · SQLite
+    </text>
+    <text x="534" y="188" text-anchor="end" fill="#86e8da" font-family="'Be Vietnam Pro', -apple-system, BlinkMacSystemFont, 'Segoe UI', Arial, sans-serif" font-size="12.5" font-weight="800">
+      Open Web App -&gt;
+    </text>
+  </g>
+
+  <!-- BENTO CARD 2: TD-WallpaperEngine -->
+  <g transform="translate(612, 50)">
+    <rect width="556" height="208" rx="14" fill="#101315" stroke="#2a3134" stroke-width="1.2"/>
+    <line x1="20" y1="1" x2="180" y2="1" stroke="#85bcf5" stroke-width="2.2"/>
+
+    <!-- Title & Badge -->
+    <text x="22" y="34" fill="#f0f2f0" font-family="'Be Vietnam Pro', -apple-system, BlinkMacSystemFont, 'Segoe UI', Arial, sans-serif" font-size="19" font-weight="800">
+      TD-WallpaperEngine
+    </text>
+    <g transform="translate(372, 14)">
+      <rect width="162" height="26" rx="13" fill="#121e2b" stroke="#85bcf5" stroke-opacity="0.55" stroke-width="1"/>
+      <circle cx="15" cy="13" r="3.5" fill="#85bcf5">
+        <animate attributeName="opacity" values="1;0.25;1" dur="1.6s" repeatCount="indefinite"/>
+      </circle>
+      <text x="88" y="17" text-anchor="middle" fill="#85bcf5" font-family="'Courier New', monospace" font-size="10.5" font-weight="700">WINDOWS 10/11 APP</text>
+    </g>
+
+    <!-- Animated Playback Pipeline Box -->
+    <g transform="translate(22, 52)">
+      <rect width="512" height="44" rx="8" fill="#181d20" stroke="#85bcf5" stroke-opacity="0.3" stroke-width="1"/>
+      <!-- Animated Wire & Media Stream Packet -->
+      <line x1="56" y1="22" x2="456" y2="22" stroke="#2a3134" stroke-width="2"/>
+      <circle cx="56" cy="22" r="4.5" fill="#85bcf5">
+        <animate attributeName="cx" values="56;456" dur="2.6s" repeatCount="indefinite"/>
+      </circle>
+      <!-- 4 Playback Nodes -->
+      <rect x="12" y="9" width="106" height="26" rx="5" fill="#090b0d" stroke="#85bcf5" stroke-opacity="0.5"/>
+      <text x="65" y="26" text-anchor="middle" fill="#f0f2f0" font-family="'Courier New', monospace" font-size="10.5" font-weight="700">01 Media/URL</text>
+
+      <rect x="148" y="9" width="98" height="26" rx="5" fill="#090b0d" stroke="#c5a0f0" stroke-opacity="0.5"/>
+      <text x="197" y="26" text-anchor="middle" fill="#c5a0f0" font-family="'Courier New', monospace" font-size="10.5" font-weight="700">02 C# / WPF</text>
+
+      <rect x="276" y="9" width="98" height="26" rx="5" fill="#090b0d" stroke="#86e8da" stroke-opacity="0.5"/>
+      <text x="325" y="26" text-anchor="middle" fill="#86e8da" font-family="'Courier New', monospace" font-size="10.5" font-weight="700">03 mpv 60fps</text>
+
+      <rect x="402" y="9" width="98" height="26" rx="5" fill="#090b0d" stroke="#e8bd75" stroke-opacity="0.6"/>
+      <text x="451" y="26" text-anchor="middle" fill="#e8bd75" font-family="'Courier New', monospace" font-size="10.5" font-weight="700">04 Desktop</text>
+    </g>
+
+    <!-- Description -->
+    <text x="22" y="122" fill="#a2aaa9" font-family="'Be Vietnam Pro', -apple-system, BlinkMacSystemFont, 'Segoe UI', Arial, sans-serif" font-size="13">
+      <tspan x="22" dy="0">Standalone Windows video wallpaper engine (MP4/WebM) with zero Steam dependency.</tspan>
+      <tspan x="22" dy="21">Features URL/YouTube imports, playlists, scheduled rotation, and 15/30/60 FPS caps.</tspan>
+    </text>
+
+    <!-- Footer -->
+    <line x1="22" y1="164" x2="534" y2="164" stroke="#2a3134" stroke-width="1"/>
+    <text x="22" y="188" fill="#a2aaa9" font-family="'Courier New', monospace" font-size="11" font-weight="700">
+      C# · .NET 10 · WPF · mpv · Inno Setup
+    </text>
+    <text x="534" y="188" text-anchor="end" fill="#86e8da" font-family="'Be Vietnam Pro', -apple-system, BlinkMacSystemFont, 'Segoe UI', Arial, sans-serif" font-size="12.5" font-weight="800">
+      Download Installer -&gt;
+    </text>
+  </g>
+</svg>

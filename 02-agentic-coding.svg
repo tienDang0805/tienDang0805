@@ -1,0 +1,174 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 310" width="100%" height="100%">
+  <defs>
+    <linearGradient id="bgAgent" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#090b0d"/>
+      <stop offset="50%" stop-color="#0d1216"/>
+      <stop offset="100%" stop-color="#090b0d"/>
+    </linearGradient>
+    <radialGradient id="glowAgent" cx="50%" cy="35%" r="55%">
+      <stop offset="0%" stop-color="#c5a0f0" stop-opacity="0.11">
+        <animate attributeName="stop-opacity" values="0.07;0.16;0.07" dur="4.5s" repeatCount="indefinite"/>
+      </stop>
+      <stop offset="55%" stop-color="#86e8da" stop-opacity="0.05"/>
+      <stop offset="100%" stop-color="#090b0d" stop-opacity="0"/>
+    </radialGradient>
+    <pattern id="gridAgent" width="24" height="24" patternUnits="userSpaceOnUse">
+      <path d="M 24 0 L 0 0 0 24" fill="none" stroke="#85bcf5" stroke-width="0.5" stroke-opacity="0.07"/>
+    </pattern>
+  </defs>
+
+  <!-- Outer Card -->
+  <rect width="1200" height="310" rx="16" fill="url(#bgAgent)"/>
+  <rect width="1200" height="310" rx="16" fill="url(#glowAgent)"/>
+  <rect width="1200" height="310" rx="16" fill="url(#gridAgent)"/>
+  <rect x="0.75" y="0.75" width="1198.5" height="308.5" rx="15.25" fill="none" stroke="#2a3134" stroke-width="1.5"/>
+
+  <!-- Section Header -->
+  <g transform="translate(32, 32)">
+    <circle cx="6" cy="-4" r="3.5" fill="#c5a0f0">
+      <animate attributeName="opacity" values="1;0.25;1" dur="1.6s" repeatCount="indefinite"/>
+    </circle>
+    <text x="18" y="0" fill="#c5a0f0" font-family="'Courier New', monospace" font-size="13" font-weight="700">AI</text>
+    <text x="44" y="0" fill="#f0f2f0" font-family="'Be Vietnam Pro', -apple-system, BlinkMacSystemFont, 'Segoe UI', Arial, sans-serif" font-size="13" font-weight="800" letter-spacing="0.8">
+      AGENTIC CODING HARNESS · MY DAILY AI ENGINEERING STACK
+    </text>
+    <text x="1136" y="0" text-anchor="end" fill="#86e8da" font-family="'Courier New', monospace" font-size="11.5" font-weight="700">
+      CODEX DESKTOP &lt;-&gt; CLIPROXY :8317 &lt;-&gt; GEMINI 4 ARGON (HIGH)
+    </text>
+  </g>
+
+  <!-- TOP PIPELINE: 4 LIVE NODES (CODEX -> MCP HARNESS -> CLIPROXYAPI :8317 -> ANTIGRAVITY ARGON) -->
+  <g transform="translate(32, 48)">
+    <rect width="1136" height="106" rx="14" fill="#101315" stroke="#2a3134" stroke-width="1.2"/>
+
+    <!-- Animated Bidirectional Data Conduits -->
+    <line x1="250" y1="44" x2="890" y2="44" stroke="#2a3134" stroke-width="2" stroke-dasharray="5 5"/>
+    <line x1="250" y1="64" x2="890" y2="64" stroke="#2a3134" stroke-width="2" stroke-dasharray="5 5"/>
+
+    <!-- Forward Request Packet (Codex -> CLIProxy -> Argon) -->
+    <circle cx="250" cy="44" r="4.5" fill="#36f5ed">
+      <animate attributeName="cx" values="250;890" dur="2.8s" repeatCount="indefinite"/>
+    </circle>
+    <circle cx="250" cy="44" r="9" fill="#36f5ed" fill-opacity="0.25">
+      <animate attributeName="cx" values="250;890" dur="2.8s" repeatCount="indefinite"/>
+    </circle>
+
+    <!-- Return Tool-Call Stream Packet (Argon -> CLIProxy -> MCP -> Codex) -->
+    <circle cx="890" cy="64" r="4.5" fill="#c5a0f0">
+      <animate attributeName="cx" values="890;250" dur="2.8s" repeatCount="indefinite"/>
+    </circle>
+    <circle cx="890" cy="64" r="9" fill="#c5a0f0" fill-opacity="0.25">
+      <animate attributeName="cx" values="890;250" dur="2.8s" repeatCount="indefinite"/>
+    </circle>
+
+    <!-- NODE 01: OpenAI Codex Desktop -->
+    <g transform="translate(18, 14)">
+      <rect width="248" height="78" rx="10" fill="#112624" stroke="#86e8da" stroke-opacity="0.7" stroke-width="1.3">
+        <animate attributeName="stroke-opacity" values="0.45;1;0.45" dur="3.2s" begin="0s" repeatCount="indefinite"/>
+      </rect>
+      <text x="14" y="22" fill="#86e8da" font-family="'Courier New', monospace" font-size="10.5" font-weight="700">01 // WORKSPACE CLIENT</text>
+      <text x="14" y="44" fill="#f0f2f0" font-family="'Be Vietnam Pro', -apple-system, BlinkMacSystemFont, 'Segoe UI', Arial, sans-serif" font-size="15.5" font-weight="800">OpenAI Codex Desktop</text>
+      <text x="14" y="64" fill="#a2aaa9" font-family="'Courier New', monospace" font-size="10.5" font-weight="700">Sol 6.1 Prompt · Undo Cards</text>
+    </g>
+
+    <!-- NODE 02: MCP & Tool Harness -->
+    <g transform="translate(302, 14)">
+      <rect width="248" height="78" rx="10" fill="#122233" stroke="#85bcf5" stroke-opacity="0.7" stroke-width="1.3">
+        <animate attributeName="stroke-opacity" values="0.45;1;0.45" dur="3.2s" begin="0.8s" repeatCount="indefinite"/>
+      </rect>
+      <text x="14" y="22" fill="#85bcf5" font-family="'Courier New', monospace" font-size="10.5" font-weight="700">02 // CODE &amp; MCP HARNESS</text>
+      <text x="14" y="44" fill="#f0f2f0" font-family="'Be Vietnam Pro', -apple-system, BlinkMacSystemFont, 'Segoe UI', Arial, sans-serif" font-size="15.5" font-weight="800">MCP + Seatbelt Exec</text>
+      <text x="14" y="64" fill="#a2aaa9" font-family="'Courier New', monospace" font-size="10.5" font-weight="700">apply_patch · cua_repl · GitHub</text>
+    </g>
+
+    <!-- NODE 03: CLIProxyAPI :8317 -->
+    <g transform="translate(586, 14)">
+      <rect width="248" height="78" rx="10" fill="#272015" stroke="#e8bd75" stroke-opacity="0.7" stroke-width="1.3">
+        <animate attributeName="stroke-opacity" values="0.45;1;0.45" dur="3.2s" begin="1.6s" repeatCount="indefinite"/>
+      </rect>
+      <text x="14" y="22" fill="#e8bd75" font-family="'Courier New', monospace" font-size="10.5" font-weight="700">03 // LOCAL PROXY ROUTER</text>
+      <text x="14" y="44" fill="#f0f2f0" font-family="'Be Vietnam Pro', -apple-system, BlinkMacSystemFont, 'Segoe UI', Arial, sans-serif" font-size="15.5" font-weight="800">CLIProxyAPI :8317</text>
+      <text x="14" y="64" fill="#a2aaa9" font-family="'Courier New', monospace" font-size="10.5" font-weight="700">127.0.0.1:8317 · Stream Adapter</text>
+    </g>
+
+    <!-- NODE 04: Antigravity Models -->
+    <g transform="translate(870, 14)">
+      <rect width="248" height="78" rx="10" fill="#1e192e" stroke="#c5a0f0" stroke-opacity="0.7" stroke-width="1.3">
+        <animate attributeName="stroke-opacity" values="0.45;1;0.45" dur="3.2s" begin="2.4s" repeatCount="indefinite"/>
+      </rect>
+      <text x="14" y="22" fill="#c5a0f0" font-family="'Courier New', monospace" font-size="10.5" font-weight="700">04 // ANTIGRAVITY BACKEND</text>
+      <text x="14" y="44" fill="#f0f2f0" font-family="'Be Vietnam Pro', -apple-system, BlinkMacSystemFont, 'Segoe UI', Arial, sans-serif" font-size="15.5" font-weight="800">Gemini 4 Argon (High)</text>
+      <text x="14" y="64" fill="#a2aaa9" font-family="'Courier New', monospace" font-size="10.5" font-weight="700">+ gemini-3.1-flash-image</text>
+    </g>
+  </g>
+
+  <!-- BOTTOM ROW: LEFT = 4-STEP AGENTIC EXECUTION LOOP | RIGHT = LIVE TELEMETRY CONSOLE -->
+  <!-- Left Card: 01 PLAN -> 02 BUILD -> 03 REVIEW -> 04 VERIFY -->
+  <g transform="translate(32, 168)">
+    <rect width="556" height="118" rx="14" fill="#101315" stroke="#2a3134" stroke-width="1.2"/>
+    <text x="20" y="26" fill="#a2aaa9" font-family="'Courier New', monospace" font-size="11" font-weight="700" letter-spacing="0.8">
+      AUTONOMOUS LOOP // 01 PLAN -&gt; 02 BUILD -&gt; 03 REVIEW -&gt; 04 VERIFY
+    </text>
+
+    <!-- Step 01: Plan -->
+    <g transform="translate(20, 40)">
+      <rect width="120" height="60" rx="8" fill="#181d20" stroke="#86e8da" stroke-width="1.2">
+        <animate attributeName="stroke-opacity" values="1;0.25;0.25;0.25;1" dur="4s" repeatCount="indefinite"/>
+      </rect>
+      <text x="12" y="22" fill="#86e8da" font-family="'Courier New', monospace" font-size="10.5" font-weight="700">01 plan</text>
+      <text x="12" y="43" fill="#f0f2f0" font-family="'Be Vietnam Pro', -apple-system, BlinkMacSystemFont, 'Segoe UI', Arial, sans-serif" font-size="12.5" font-weight="700">rg · Context</text>
+    </g>
+
+    <!-- Step 02: Build -->
+    <g transform="translate(152, 40)">
+      <rect width="120" height="60" rx="8" fill="#181d20" stroke="#85bcf5" stroke-width="1.2">
+        <animate attributeName="stroke-opacity" values="0.25;1;0.25;0.25;0.25" dur="4s" repeatCount="indefinite"/>
+      </rect>
+      <text x="12" y="22" fill="#85bcf5" font-family="'Courier New', monospace" font-size="10.5" font-weight="700">02 build</text>
+      <text x="12" y="43" fill="#f0f2f0" font-family="'Be Vietnam Pro', -apple-system, BlinkMacSystemFont, 'Segoe UI', Arial, sans-serif" font-size="12.5" font-weight="700">apply_patch</text>
+    </g>
+
+    <!-- Step 03: Review -->
+    <g transform="translate(284, 40)">
+      <rect width="120" height="60" rx="8" fill="#181d20" stroke="#c5a0f0" stroke-width="1.2">
+        <animate attributeName="stroke-opacity" values="0.25;0.25;1;0.25;0.25" dur="4s" repeatCount="indefinite"/>
+      </rect>
+      <text x="12" y="22" fill="#c5a0f0" font-family="'Courier New', monospace" font-size="10.5" font-weight="700">03 review</text>
+      <text x="12" y="43" fill="#f0f2f0" font-family="'Be Vietnam Pro', -apple-system, BlinkMacSystemFont, 'Segoe UI', Arial, sans-serif" font-size="12.5" font-weight="700">AST &amp; Diff</text>
+    </g>
+
+    <!-- Step 04: Verify -->
+    <g transform="translate(416, 40)">
+      <rect width="120" height="60" rx="8" fill="#181d20" stroke="#e8bd75" stroke-width="1.2">
+        <animate attributeName="stroke-opacity" values="0.25;0.25;0.25;1;0.25" dur="4s" repeatCount="indefinite"/>
+      </rect>
+      <text x="12" y="22" fill="#e8bd75" font-family="'Courier New', monospace" font-size="10.5" font-weight="700">04 verify</text>
+      <text x="12" y="43" fill="#f0f2f0" font-family="'Be Vietnam Pro', -apple-system, BlinkMacSystemFont, 'Segoe UI', Arial, sans-serif" font-size="12.5" font-weight="700">Test &amp; Ship</text>
+    </g>
+  </g>
+
+  <!-- Right Card: Live CLIProxyAPI & Argon Telemetry Stream -->
+  <g transform="translate(612, 168)">
+    <rect width="556" height="118" rx="14" fill="#101315" stroke="#2a3134" stroke-width="1.2"/>
+    <circle cx="24" cy="22" r="4" fill="#36f5ed">
+      <animate attributeName="opacity" values="1;0.2;1" dur="1.1s" repeatCount="indefinite"/>
+    </circle>
+    <text x="36" y="26" fill="#86e8da" font-family="'Courier New', monospace" font-size="11" font-weight="700">
+      CLIPROXYAPI STREAM // 127.0.0.1:8317 -&gt; ANTIGRAVITY
+    </text>
+    <text x="536" y="26" text-anchor="end" fill="#e8bd75" font-family="'Courier New', monospace" font-size="10.5" font-weight="700">
+      THINKING: HIGH
+    </text>
+
+    <rect x="18" y="36" width="520" height="66" rx="8" fill="#090b0d" stroke="#2a3134" stroke-width="1"/>
+    <text x="30" y="56" fill="#a2aaa9" font-family="'Courier New', monospace" font-size="11" font-weight="700">
+      <tspan fill="#85bcf5">[codex-mcp]</tspan> tools: apply_patch, exec_command, github, cua_repl
+    </text>
+    <text x="30" y="74" fill="#a2aaa9" font-family="'Courier New', monospace" font-size="11" font-weight="700">
+      <tspan fill="#e8bd75">[proxy:8317]</tspan> route /v1/chat/completions -&gt; <tspan fill="#c5a0f0">gemini-4-argon-high</tspan>
+    </text>
+    <text x="30" y="92" fill="#a2aaa9" font-family="'Courier New', monospace" font-size="11" font-weight="700">
+      <tspan fill="#86e8da">[image:8317]</tspan> modal=[text,image] -&gt; <tspan fill="#f19cb8">gemini-3.1-flash-image</tspan> ✓
+    </text>
+  </g>
+</svg>
