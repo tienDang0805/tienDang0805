@@ -1,0 +1,73 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1000 176" width="100%" height="100%">
+  <defs>
+    <radialGradient id="roseGlow" cx="50%" cy="45%" r="55%">
+      <stop offset="0%" stop-color="#f19cb8" stop-opacity="0.13"/>
+      <stop offset="75%" stop-color="#101315" stop-opacity="0"/>
+    </radialGradient>
+    <marker id="roseArrow" viewBox="0 0 8 8" refX="6" refY="4" markerWidth="6" markerHeight="6" orient="auto">
+      <path d="M1 1L6 4L1 7" fill="none" stroke="#f19cb8" stroke-width="1.2"/>
+    </marker>
+    <filter id="roseHalo">
+      <feGaussianBlur stdDeviation="4"/>
+    </filter>
+  </defs>
+
+  <!-- Schematic Model matching .lh-blog-card-c__schematic on devtiendang.blog (Single Dominant Color: Rose #f19cb8) -->
+  <rect width="1000" height="176" rx="10" fill="#101315" stroke="#2a3134" stroke-width="1.2"/>
+  <rect x="1" y="38" width="998" height="137" fill="url(#roseGlow)"/>
+  <line x1="0" y1="38" x2="1000" y2="38" stroke="#2a3134" stroke-width="1"/>
+
+  <!-- Top Bar -->
+  <circle cx="20" cy="19" r="3" fill="#f19cb8"/>
+  <text x="32" y="23" fill="#a2aaa9" font-family="'Courier New', monospace" font-size="10" font-weight="700" letter-spacing="0.6">
+    03 // TECHNICAL WRITING PIPELINE · DEVTIENDANG.BLOG/BLOG
+  </text>
+  <text x="980" y="23" text-anchor="end" fill="#f19cb8" font-family="'Courier New', monospace" font-size="10" font-weight="700">
+    AI AGENTS · MOBILE · STORIES
+  </text>
+
+  <!-- Connecting Wires (y=102) -->
+  <path d="M215 102H295" stroke="#f19cb8" stroke-opacity="0.65" stroke-width="1.6" marker-end="url(#roseArrow)"/>
+  <path d="M465 102H545" stroke="#f19cb8" stroke-opacity="0.65" stroke-width="1.6" marker-end="url(#roseArrow)"/>
+  <path d="M715 102H795" stroke="#f19cb8" stroke-opacity="0.65" stroke-width="1.6" marker-end="url(#roseArrow)"/>
+
+  <!-- Animated Signal Packet -->
+  <circle r="6" cy="102" fill="#f19cb8" opacity="0.55" filter="url(#roseHalo)">
+    <animate attributeName="cx" values="130;380;630;880" dur="5.2s" repeatCount="indefinite"/>
+  </circle>
+  <circle r="3.5" cy="102" fill="#f0f2f0">
+    <animate attributeName="cx" values="130;380;630;880" dur="5.2s" repeatCount="indefinite"/>
+  </circle>
+
+  <!-- Node 01 -->
+  <g transform="translate(45, 66)">
+    <rect width="170" height="72" rx="7" fill="#090b0d" stroke="#2a3134" stroke-width="1.2"/>
+    <text x="10" y="15" fill="#a2aaa9" font-family="'Courier New', monospace" font-size="8" opacity="0.6">01</text>
+    <text x="85" y="40" text-anchor="middle" fill="#f0f2f0" font-family="'Be Vietnam Pro', -apple-system, BlinkMacSystemFont, 'Segoe UI', Arial, sans-serif" font-size="13" font-weight="700">Real Experiments</text>
+    <text x="85" y="57" text-anchor="middle" fill="#a2aaa9" font-family="'Courier New', monospace" font-size="8" letter-spacing="0.4">MOBILE &amp; AI LABS</text>
+  </g>
+
+  <!-- Node 02 (Highlighted) -->
+  <g transform="translate(295, 66)">
+    <rect width="170" height="72" rx="7" fill="#24151c" stroke="#f19cb8" stroke-width="1.4"/>
+    <text x="10" y="15" fill="#f19cb8" font-family="'Courier New', monospace" font-size="8">02</text>
+    <text x="85" y="40" text-anchor="middle" fill="#f0f2f0" font-family="'Be Vietnam Pro', -apple-system, BlinkMacSystemFont, 'Segoe UI', Arial, sans-serif" font-size="13" font-weight="700">Architecture Flow</text>
+    <text x="85" y="57" text-anchor="middle" fill="#f19cb8" font-family="'Courier New', monospace" font-size="8" font-weight="700" letter-spacing="0.4">50 FPS DIAGRAMS</text>
+  </g>
+
+  <!-- Node 03 -->
+  <g transform="translate(545, 66)">
+    <rect width="170" height="72" rx="7" fill="#090b0d" stroke="#2a3134" stroke-width="1.2"/>
+    <text x="10" y="15" fill="#a2aaa9" font-family="'Courier New', monospace" font-size="8" opacity="0.6">03</text>
+    <text x="85" y="40" text-anchor="middle" fill="#f0f2f0" font-family="'Be Vietnam Pro', -apple-system, BlinkMacSystemFont, 'Segoe UI', Arial, sans-serif" font-size="13" font-weight="700">Deep-Dive Notes</text>
+    <text x="85" y="57" text-anchor="middle" fill="#a2aaa9" font-family="'Courier New', monospace" font-size="8" letter-spacing="0.4">VI / EN BILINGUAL</text>
+  </g>
+
+  <!-- Node 04 -->
+  <g transform="translate(795, 66)">
+    <rect width="160" height="72" rx="7" fill="#090b0d" stroke="#2a3134" stroke-width="1.2"/>
+    <text x="10" y="15" fill="#a2aaa9" font-family="'Courier New', monospace" font-size="8" opacity="0.6">04</text>
+    <text x="80" y="40" text-anchor="middle" fill="#f0f2f0" font-family="'Be Vietnam Pro', -apple-system, BlinkMacSystemFont, 'Segoe UI', Arial, sans-serif" font-size="13" font-weight="700">Published Blog</text>
+    <text x="80" y="57" text-anchor="middle" fill="#a2aaa9" font-family="'Courier New', monospace" font-size="8" letter-spacing="0.4">DEVTIENDANG.BLOG</text>
+  </g>
+</svg>

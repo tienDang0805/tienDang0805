@@ -1,0 +1,100 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1000 280" width="100%" height="100%">
+  <defs>
+    <radialGradient id="stackGlow" cx="50%" cy="48%" r="55%">
+      <stop offset="0%" stop-color="#c5a0f0" stop-opacity="0.14"/>
+      <stop offset="75%" stop-color="#101315" stop-opacity="0"/>
+    </radialGradient>
+    <marker id="purpleArrow" viewBox="0 0 8 8" refX="6" refY="4" markerWidth="6" markerHeight="6" orient="auto">
+      <path d="M1 1L6 4L1 7" fill="none" stroke="#c5a0f0" stroke-width="1.2"/>
+    </marker>
+    <filter id="purpleHalo">
+      <feGaussianBlur stdDeviation="4"/>
+    </filter>
+  </defs>
+
+  <!-- Outer Frame matching .project-architecture on devtiendang.blog (Single Dominant Color: Purple #c5a0f0) -->
+  <rect width="1000" height="280" rx="10" fill="#101315" stroke="#2a3134" stroke-width="1.2"/>
+  <rect x="1" y="42" width="998" height="237" fill="url(#stackGlow)"/>
+  <line x1="0" y1="42" x2="1000" y2="42" stroke="#2a3134" stroke-width="1"/>
+
+  <!-- Top Bar -->
+  <circle cx="22" cy="21" r="3" fill="#c5a0f0">
+    <animate attributeName="opacity" values="1;0.3;1" dur="1.8s" repeatCount="indefinite"/>
+  </circle>
+  <text x="34" y="25" fill="#a2aaa9" font-family="'Courier New', monospace" font-size="10.5" font-weight="700" letter-spacing="0.8">
+    01 // MY RUNNING AGENTIC STACK · CODEX &lt;-&gt; CLIPROXYAPI &lt;-&gt; GEMINI 4 ARGON
+  </text>
+  <text x="980" y="25" text-anchor="end" fill="#c5a0f0" font-family="'Courier New', monospace" font-size="10" font-weight="700">
+    LOCAL :8317 · LIVE
+  </text>
+
+  <!-- Dashed Boundary Box (Local Proxy + Antigravity Runtime) -->
+  <rect x="255" y="64" width="710" height="164" rx="12" fill="#c5a0f0" fill-opacity="0.035" stroke="#c5a0f0" stroke-opacity="0.28" stroke-width="1.2" stroke-dasharray="4 5"/>
+  <text x="272" y="84" fill="#c5a0f0" font-family="'Courier New', monospace" font-size="9" font-weight="700" letter-spacing="0.8">
+    MCP HARNESS + CLIPROXYAPI :8317 + ANTIGRAVITY BACKEND
+  </text>
+
+  <!-- Outbound Request Wires (Top y=132) -->
+  <path d="M195 132H285" stroke="#c5a0f0" stroke-opacity="0.65" stroke-width="1.6" marker-end="url(#purpleArrow)"/>
+  <path d="M445 132H555" stroke="#c5a0f0" stroke-opacity="0.65" stroke-width="1.6" marker-end="url(#purpleArrow)"/>
+  <path d="M715 132H805" stroke="#c5a0f0" stroke-opacity="0.65" stroke-width="1.6" marker-end="url(#purpleArrow)"/>
+
+  <!-- Inbound Stream / Tool-Call Wires (Bottom y=166) -->
+  <path d="M285 166H195" stroke="#c5a0f0" stroke-opacity="0.35" stroke-width="1.5" stroke-dasharray="3 3"/>
+  <path d="M555 166H445" stroke="#c5a0f0" stroke-opacity="0.35" stroke-width="1.5" stroke-dasharray="3 3"/>
+  <path d="M805 166H715" stroke="#c5a0f0" stroke-opacity="0.35" stroke-width="1.5" stroke-dasharray="3 3"/>
+
+  <!-- Animated Packet Traveling Full Round-Trip (115 -> 365 -> 635 -> 885 -> 635 -> 365 -> 115) -->
+  <circle r="6" fill="#c5a0f0" opacity="0.55" filter="url(#purpleHalo)">
+    <animate attributeName="cx" values="115;365;635;885;885;635;365;115" keyTimes="0;0.16;0.33;0.48;0.52;0.68;0.84;1" dur="6.4s" repeatCount="indefinite"/>
+    <animate attributeName="cy" values="132;132;132;132;166;166;166;166" keyTimes="0;0.16;0.33;0.48;0.52;0.68;0.84;1" dur="6.4s" repeatCount="indefinite"/>
+  </circle>
+  <circle r="3.5" fill="#f0f2f0">
+    <animate attributeName="cx" values="115;365;635;885;885;635;365;115" keyTimes="0;0.16;0.33;0.48;0.52;0.68;0.84;1" dur="6.4s" repeatCount="indefinite"/>
+    <animate attributeName="cy" values="132;132;132;132;166;166;166;166" keyTimes="0;0.16;0.33;0.48;0.52;0.68;0.84;1" dur="6.4s" repeatCount="indefinite"/>
+  </circle>
+
+  <!-- NODE 01: OpenAI Codex (Center x=115) -->
+  <g transform="translate(35, 102)">
+    <rect width="160" height="88" rx="8" fill="#090b0d" stroke="#2a3134" stroke-width="1.2">
+      <animate attributeName="stroke" values="#c5a0f0;#2a3134;#2a3134;#2a3134;#c5a0f0" dur="6.4s" repeatCount="indefinite"/>
+    </rect>
+    <text x="10" y="16" fill="#a2aaa9" font-family="'Courier New', monospace" font-size="8.5" opacity="0.6">01</text>
+    <text x="80" y="46" text-anchor="middle" fill="#f0f2f0" font-family="'Be Vietnam Pro', -apple-system, BlinkMacSystemFont, 'Segoe UI', Arial, sans-serif" font-size="14" font-weight="700">OpenAI Codex</text>
+    <text x="80" y="66" text-anchor="middle" fill="#c5a0f0" font-family="'Courier New', monospace" font-size="8.5" font-weight="700" letter-spacing="0.4">DESKTOP CLIENT</text>
+  </g>
+
+  <!-- NODE 02: MCP Harness (Center x=365) -->
+  <g transform="translate(285, 102)">
+    <rect width="160" height="88" rx="8" fill="#090b0d" stroke="#2a3134" stroke-width="1.2">
+      <animate attributeName="stroke" values="#2a3134;#c5a0f0;#2a3134;#2a3134;#2a3134" dur="6.4s" repeatCount="indefinite"/>
+    </rect>
+    <text x="10" y="16" fill="#a2aaa9" font-family="'Courier New', monospace" font-size="8.5" opacity="0.6">02</text>
+    <text x="80" y="46" text-anchor="middle" fill="#f0f2f0" font-family="'Be Vietnam Pro', -apple-system, BlinkMacSystemFont, 'Segoe UI', Arial, sans-serif" font-size="14" font-weight="700">MCP Harness</text>
+    <text x="80" y="66" text-anchor="middle" fill="#a2aaa9" font-family="'Courier New', monospace" font-size="8.5" letter-spacing="0.4">PATCH · EXEC · CUA</text>
+  </g>
+
+  <!-- NODE 03: CLIProxyAPI (Center x=635, Highlighted Active Node like devtiendang.blog) -->
+  <g transform="translate(555, 102)">
+    <rect width="160" height="88" rx="8" fill="#1b1526" stroke="#c5a0f0" stroke-width="1.4"/>
+    <text x="10" y="16" fill="#c5a0f0" font-family="'Courier New', monospace" font-size="8.5">03</text>
+    <text x="80" y="46" text-anchor="middle" fill="#f0f2f0" font-family="'Be Vietnam Pro', -apple-system, BlinkMacSystemFont, 'Segoe UI', Arial, sans-serif" font-size="14" font-weight="700">CLIProxyAPI</text>
+    <text x="80" y="66" text-anchor="middle" fill="#c5a0f0" font-family="'Courier New', monospace" font-size="8.5" font-weight="700" letter-spacing="0.4">127.0.0.1:8317</text>
+  </g>
+
+  <!-- NODE 04: Gemini 4 Argon (Center x=885) -->
+  <g transform="translate(805, 102)">
+    <rect width="160" height="88" rx="8" fill="#090b0d" stroke="#2a3134" stroke-width="1.2">
+      <animate attributeName="stroke" values="#2a3134;#2a3134;#c5a0f0;#2a3134;#2a3134" dur="6.4s" repeatCount="indefinite"/>
+    </rect>
+    <text x="10" y="16" fill="#a2aaa9" font-family="'Courier New', monospace" font-size="8.5" opacity="0.6">04</text>
+    <text x="80" y="46" text-anchor="middle" fill="#f0f2f0" font-family="'Be Vietnam Pro', -apple-system, BlinkMacSystemFont, 'Segoe UI', Arial, sans-serif" font-size="14" font-weight="700">Gemini 4 Argon</text>
+    <text x="80" y="66" text-anchor="middle" fill="#a2aaa9" font-family="'Courier New', monospace" font-size="8.5" letter-spacing="0.4">ANTIGRAVITY (HIGH)</text>
+  </g>
+
+  <!-- Legend Footer -->
+  <line x1="410" y1="254" x2="424" y2="254" stroke="#c5a0f0" stroke-width="1.6"/>
+  <text x="430" y="257" fill="#a2aaa9" font-family="'Courier New', monospace" font-size="9">Prompt &amp; context</text>
+  <line x1="535" y1="254" x2="549" y2="254" stroke="#c5a0f0" stroke-opacity="0.45" stroke-width="1.5" stroke-dasharray="3 3"/>
+  <text x="555" y="257" fill="#a2aaa9" font-family="'Courier New', monospace" font-size="9">Streamed tool calls</text>
+</svg>

@@ -1,0 +1,82 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1000 280" width="100%" height="100%">
+  <defs>
+    <radialGradient id="amberGlow2" cx="50%" cy="48%" r="55%">
+      <stop offset="0%" stop-color="#e8bd75" stop-opacity="0.13"/>
+      <stop offset="75%" stop-color="#101315" stop-opacity="0"/>
+    </radialGradient>
+    <marker id="amberArrow2" viewBox="0 0 8 8" refX="6" refY="4" markerWidth="6" markerHeight="6" orient="auto">
+      <path d="M1 1L6 4L1 7" fill="none" stroke="#e8bd75" stroke-width="1.2"/>
+    </marker>
+    <filter id="amberHalo2">
+      <feGaussianBlur stdDeviation="4"/>
+    </filter>
+  </defs>
+
+  <!-- Exact ProjectArchitecture.tsx (kind="wallpaper") with Single Dominant Color: Warm Amber #e8bd75 -->
+  <rect width="1000" height="280" rx="10" fill="#101315" stroke="#2a3134" stroke-width="1.2"/>
+  <rect x="1" y="42" width="998" height="237" fill="url(#amberGlow2)"/>
+  <line x1="0" y1="42" x2="1000" y2="42" stroke="#2a3134" stroke-width="1"/>
+
+  <!-- Top Bar -->
+  <text x="20" y="25" fill="#a2aaa9" font-family="'Courier New', monospace" font-size="10.5" font-weight="700" letter-spacing="0.6">
+    TD-WALLPAPERENGINE / PLAYBACK
+  </text>
+  <text x="980" y="25" text-anchor="end" fill="#e8bd75" font-family="'Courier New', monospace" font-size="10" font-weight="700">
+    02 // AFTER HOURS
+  </text>
+
+  <!-- WINDOWS APP Boundary Box (around Library + Renderer + Desktop just like ProjectArchitecture.tsx) -->
+  <rect x="245" y="62" width="725" height="168" rx="12" fill="#e8bd75" fill-opacity="0.035" stroke="#e8bd75" stroke-opacity="0.28" stroke-width="1.2" stroke-dasharray="4 5"/>
+  <text x="262" y="82" fill="#e8bd75" font-family="'Courier New', monospace" font-size="9" font-weight="700" letter-spacing="0.8">
+    WINDOWS APP
+  </text>
+
+  <!-- Playback Wires (y=146) -->
+  <path d="M195 146H270" stroke="#e8bd75" stroke-opacity="0.65" stroke-width="1.6" marker-end="url(#amberArrow2)"/>
+  <path d="M430 146H540" stroke="#e8bd75" stroke-opacity="0.65" stroke-width="1.6" marker-end="url(#amberArrow2)"/>
+  <path d="M700 146H795" stroke="#e8bd75" stroke-opacity="0.65" stroke-width="1.6" marker-end="url(#amberArrow2)"/>
+
+  <!-- Animated Playback Packet -->
+  <circle r="6" cy="146" fill="#e8bd75" opacity="0.55" filter="url(#amberHalo2)">
+    <animate attributeName="cx" values="115;350;620;875" dur="4.8s" repeatCount="indefinite"/>
+  </circle>
+  <circle r="3.5" cy="146" fill="#f0f2f0">
+    <animate attributeName="cx" values="115;350;620;875" dur="4.8s" repeatCount="indefinite"/>
+  </circle>
+
+  <!-- 01 Image / Video -->
+  <g transform="translate(35, 102)">
+    <rect width="160" height="88" rx="8" fill="#090b0d" stroke="#2a3134" stroke-width="1.2"/>
+    <text x="10" y="16" fill="#a2aaa9" font-family="'Courier New', monospace" font-size="8.5" opacity="0.6">01</text>
+    <text x="80" y="46" text-anchor="middle" fill="#f0f2f0" font-family="'Be Vietnam Pro', -apple-system, BlinkMacSystemFont, 'Segoe UI', Arial, sans-serif" font-size="14" font-weight="700">Image / Video</text>
+    <text x="80" y="66" text-anchor="middle" fill="#a2aaa9" font-family="'Courier New', monospace" font-size="8.5" letter-spacing="0.4">LOCAL MEDIA</text>
+  </g>
+
+  <!-- 02 Library (Selected Node) -->
+  <g transform="translate(270, 102)">
+    <rect width="160" height="88" rx="8" fill="#231d13" stroke="#e8bd75" stroke-width="1.4"/>
+    <text x="10" y="16" fill="#e8bd75" font-family="'Courier New', monospace" font-size="8.5">02</text>
+    <text x="80" y="46" text-anchor="middle" fill="#f0f2f0" font-family="'Be Vietnam Pro', -apple-system, BlinkMacSystemFont, 'Segoe UI', Arial, sans-serif" font-size="14" font-weight="700">Library</text>
+    <text x="80" y="66" text-anchor="middle" fill="#e8bd75" font-family="'Courier New', monospace" font-size="8.5" font-weight="700" letter-spacing="0.4">C# / WPF</text>
+  </g>
+
+  <!-- 03 Renderer -->
+  <g transform="translate(540, 102)">
+    <rect width="160" height="88" rx="8" fill="#090b0d" stroke="#2a3134" stroke-width="1.2"/>
+    <text x="10" y="16" fill="#a2aaa9" font-family="'Courier New', monospace" font-size="8.5" opacity="0.6">03</text>
+    <text x="80" y="46" text-anchor="middle" fill="#f0f2f0" font-family="'Be Vietnam Pro', -apple-system, BlinkMacSystemFont, 'Segoe UI', Arial, sans-serif" font-size="14" font-weight="700">Renderer</text>
+    <text x="80" y="66" text-anchor="middle" fill="#a2aaa9" font-family="'Courier New', monospace" font-size="8.5" letter-spacing="0.4">IMAGE / MPV</text>
+  </g>
+
+  <!-- 04 Desktop -->
+  <g transform="translate(795, 102)">
+    <rect width="160" height="88" rx="8" fill="#090b0d" stroke="#2a3134" stroke-width="1.2"/>
+    <text x="10" y="16" fill="#a2aaa9" font-family="'Courier New', monospace" font-size="8.5" opacity="0.6">04</text>
+    <text x="80" y="46" text-anchor="middle" fill="#f0f2f0" font-family="'Be Vietnam Pro', -apple-system, BlinkMacSystemFont, 'Segoe UI', Arial, sans-serif" font-size="14" font-weight="700">Desktop</text>
+    <text x="80" y="66" text-anchor="middle" fill="#a2aaa9" font-family="'Courier New', monospace" font-size="8.5" letter-spacing="0.4">WINDOWS</text>
+  </g>
+
+  <!-- Legend Footer -->
+  <line x1="440" y1="254" x2="454" y2="254" stroke="#e8bd75" stroke-width="1.6"/>
+  <text x="460" y="257" fill="#a2aaa9" font-family="'Courier New', monospace" font-size="9">Media -&gt; playback</text>
+</svg>
