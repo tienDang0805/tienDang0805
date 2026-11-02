@@ -1,6 +1,6 @@
 <div align="center">
   <a href="https://devtiendang.blog">
-    <img src="./01-hero-skills.svg" width="100%" alt="Dang Van Tien — Mobile dev 3.5 YOE , react native , android kotlin (devtiendang.blog)" />
+    <img src="./01-hero-skills.svg?v=2" width="100%" alt="Dang Van Tien — Mobile dev 3.5 YOE , react native , android kotlin (devtiendang.blog)" />
   </a>
 </div>
 
