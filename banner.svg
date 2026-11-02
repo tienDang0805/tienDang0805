@@ -1,0 +1,295 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 560" width="100%" height="100%">
+  <defs>
+    <linearGradient id="bg" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#090b0d"/>
+      <stop offset="55%" stop-color="#0d1114"/>
+      <stop offset="100%" stop-color="#090b0d"/>
+    </linearGradient>
+    <linearGradient id="headlineGrad" x1="0%" y1="0%" x2="100%" y2="18%">
+      <stop offset="5%" stop-color="#a2aaa9"/>
+      <stop offset="48%" stop-color="#f0f2f0"/>
+      <stop offset="95%" stop-color="#86e8da"/>
+    </linearGradient>
+    <radialGradient id="mintGlow" cx="72%" cy="42%" r="42%">
+      <stop offset="0%" stop-color="#46a091" stop-opacity="0.16"/>
+      <stop offset="60%" stop-color="#bf914c" stop-opacity="0.05"/>
+      <stop offset="100%" stop-color="#090b0d" stop-opacity="0"/>
+    </radialGradient>
+    <linearGradient id="plane01" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#16322f"/>
+      <stop offset="100%" stop-color="#0e1d1c"/>
+    </linearGradient>
+    <linearGradient id="plane02" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#162b40"/>
+      <stop offset="100%" stop-color="#0f1b29"/>
+    </linearGradient>
+    <linearGradient id="plane03" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#251e38"/>
+      <stop offset="100%" stop-color="#161222"/>
+    </linearGradient>
+    <linearGradient id="plane04" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#2f2618"/>
+      <stop offset="100%" stop-color="#1c170f"/>
+    </linearGradient>
+    <pattern id="holoGrid" width="30" height="30" patternUnits="userSpaceOnUse">
+      <path d="M 30 0 L 0 0 0 30" fill="none" stroke="#86e8da" stroke-width="0.6" stroke-opacity="0.12"/>
+    </pattern>
+  </defs>
+
+  <!-- Base Canvas (#090b0d from layered.css) -->
+  <rect width="1200" height="560" rx="18" fill="url(#bg)"/>
+  <rect width="1200" height="560" rx="18" fill="url(#mintGlow)"/>
+  <rect x="0.75" y="0.75" width="1198.5" height="558.5" rx="17.25" fill="none" stroke="#2a3134" stroke-width="1.5"/>
+
+  <!-- ==================== TOP SITE HEADER (devtiendang.blog navbar) ==================== -->
+  <g transform="translate(0, 0)">
+    <line x1="1" y1="62" x2="1199" y2="62" stroke="#2a3134" stroke-width="1"/>
+    <!-- Brand Device Icon [DVT] -->
+    <rect x="44" y="14" width="32" height="35" rx="8" fill="#101719" stroke="#86e8da" stroke-opacity="0.45" stroke-width="1.2"/>
+    <text x="60" y="36" text-anchor="middle" fill="#86e8da" font-family="'JetBrains Mono', ui-monospace, SFMono-Regular, Menlo, monospace" font-size="11" font-weight="700" letter-spacing="-0.5">DVT</text>
+    <text x="86" y="29" fill="#f0f2f0" font-family="'Be Vietnam Pro', -apple-system, BlinkMacSystemFont, 'Segoe UI', sans-serif" font-size="13" font-weight="700" letter-spacing="-0.3">devtiendang</text>
+    <text x="86" y="45" fill="#a2aaa9" font-family="'Be Vietnam Pro', -apple-system, BlinkMacSystemFont, 'Segoe UI', sans-serif" font-size="11">Mobile Developer</text>
+
+    <!-- Top Navigation Links -->
+    <g font-family="'Be Vietnam Pro', -apple-system, BlinkMacSystemFont, sans-serif" font-size="12" fill="#a2aaa9">
+      <text x="310" y="36" fill="#f0f2f0" font-weight="600">Trang chủ</text>
+      <rect x="331" y="60" width="18" height="2" fill="#86e8da"/>
+      <text x="392" y="36">Playground</text>
+      <text x="480" y="36">Ứng dụng</text>
+      <text x="560" y="36">Discord Bot</text>
+      <text x="650" y="36">AI Chat</text>
+      <text x="716" y="36">Blog</text>
+      <text x="766" y="36">Me</text>
+    </g>
+
+    <!-- Right Header Controls: Command K + FPS Monitor + Locale + URL Pill -->
+    <rect x="860" y="17" width="34" height="28" rx="6" fill="#101315" stroke="#2a3134" stroke-width="1"/>
+    <text x="877" y="35" text-anchor="middle" fill="#a2aaa9" font-family="'JetBrains Mono', ui-monospace, monospace" font-size="11">⌘K</text>
+
+    <rect x="902" y="17" width="76" height="28" rx="6" fill="#101315" stroke="#2a3134" stroke-width="1"/>
+    <circle cx="916" cy="31" r="3.5" fill="#86e8da">
+      <animate attributeName="opacity" values="1;0.35;1" dur="2s" repeatCount="indefinite"/>
+    </circle>
+    <text x="926" y="35" fill="#86e8da" font-family="'JetBrains Mono', ui-monospace, monospace" font-size="11" font-weight="600">60 FPS</text>
+
+    <rect x="988" y="17" width="168" height="28" rx="14" fill="#12221f" stroke="#86e8da" stroke-opacity="0.5" stroke-width="1"/>
+    <text x="1072" y="35" text-anchor="middle" fill="#86e8da" font-family="'JetBrains Mono', ui-monospace, monospace" font-size="11" font-weight="700">devtiendang.blog ↗</text>
+  </g>
+
+  <!-- ==================== LEFT HERO INTRO ==================== -->
+  <g transform="translate(44, 102)">
+    <!-- Kicker with glowing mint status dot -->
+    <circle cx="6" cy="8" r="6" fill="#86e8da" fill-opacity="0.18">
+      <animate attributeName="r" values="5;8;5" dur="2.6s" repeatCount="indefinite"/>
+    </circle>
+    <circle cx="6" cy="8" r="3" fill="#86e8da"/>
+    <text x="22" y="12" fill="#a2aaa9" font-family="'JetBrains Mono', ui-monospace, SFMono-Regular, Menlo, monospace" font-size="11.5" letter-spacing="0.8">
+      DANG VAN TIEN <tspan fill="#2a3134">·</tspan> MOBILE DEV <tspan fill="#2a3134">·</tspan> SOUTH TELECOM
+    </text>
+
+    <!-- Main Two-Line Gradient Headline -->
+    <text x="0" y="76" fill="#f0f2f0" font-family="'Be Vietnam Pro', -apple-system, BlinkMacSystemFont, 'Segoe UI', sans-serif" font-size="52" font-weight="800" letter-spacing="-2.2">
+      Từ giao diện.
+    </text>
+    <text x="0" y="136" fill="url(#headlineGrad)" font-family="'Be Vietnam Pro', -apple-system, BlinkMacSystemFont, 'Segoe UI', sans-serif" font-size="52" font-weight="800" letter-spacing="-2.2">
+      Đến lớp native.
+    </text>
+
+    <!-- Bio Paragraph -->
+    <text x="0" y="182" fill="#a2aaa9" font-family="'Be Vietnam Pro', -apple-system, BlinkMacSystemFont, 'Segoe UI', sans-serif" font-size="15" line-height="1.8">
+      <tspan x="0" dy="0">Mình là Tiến, </tspan>
+      <tspan fill="#f0f2f0" font-weight="600">Mobile Developer (3.5+ YOE)</tspan>
+      <tspan> tại Southtelecom, TP.HCM.</tspan>
+      <tspan x="0" dy="26">Mình làm ứng dụng với </tspan>
+      <tspan fill="#f0f2f0" font-weight="600">React Native</tspan>
+      <tspan> và </tspan>
+      <tspan fill="#f0f2f0" font-weight="600">Android/Kotlin</tspan>
+      <tspan>. Ngoài giờ làm</tspan>
+      <tspan x="0" dy="26">mình phát triển các dự án AI Agent, SDK và công cụ cá nhân.</tspan>
+    </text>
+
+    <!-- Action Buttons -->
+    <g transform="translate(0, 260)">
+      <!-- Primary Button (#36f5ed from layered.css) -->
+      <rect x="0" y="0" width="154" height="44" rx="6" fill="#36f5ed"/>
+      <text x="77" y="27" text-anchor="middle" fill="#062b29" font-family="'Be Vietnam Pro', -apple-system, sans-serif" font-size="13" font-weight="700">
+        Xem công việc ↓
+      </text>
+
+      <!-- Secondary Button (Ask ChatDVT) -->
+      <rect x="170" y="0" width="216" height="44" rx="6" fill="#101315" stroke="#2a3134" stroke-width="1.2"/>
+      <text x="278" y="27" text-anchor="middle" fill="#f0f2f0" font-family="'Be Vietnam Pro', -apple-system, sans-serif" font-size="13" font-weight="600">
+        Nhờ ChatDVT dẫn đường <tspan fill="#86e8da">↗</tspan>
+      </text>
+    </g>
+
+    <!-- Scroll hint -->
+    <g transform="translate(0, 326)">
+      <rect x="2" y="0" width="1.5" height="24" fill="#2a3134"/>
+      <rect x="2" y="0" width="1.5" height="10" fill="#86e8da">
+        <animate attributeName="y" values="0;14;0" dur="2.4s" repeatCount="indefinite"/>
+      </rect>
+      <text x="16" y="16" fill="#a2aaa9" font-family="'JetBrains Mono', ui-monospace, monospace" font-size="11.5">
+        01 UI → 02 REACT NATIVE → 03 ANDROID → 04 NATIVE SDK
+      </text>
+    </g>
+  </g>
+
+  <!-- ==================== RIGHT COLUMN: 4-LAYER HOLO STACK (MobileStack.tsx) ==================== -->
+  <g transform="translate(566, 84)">
+    <!-- Overline: ĐI SÂU HƠN MỘT LỚP  01 — 04 -->
+    <rect x="38" y="4" width="6" height="6" fill="none" stroke="#d9b67c" stroke-width="1.2" transform="rotate(45 41 7)"/>
+    <text x="54" y="11" fill="#a2aaa9" font-family="'JetBrains Mono', ui-monospace, monospace" font-size="11" letter-spacing="0.8">
+      ĐI SÂU HƠN MỘT LỚP
+    </text>
+    <text x="588" y="11" text-anchor="end" fill="#d9b67c" font-family="'JetBrains Mono', ui-monospace, monospace" font-size="11" font-weight="600">
+      01 — 04
+    </text>
+
+    <!-- Perspective Grid Backdrop -->
+    <rect x="34" y="22" width="556" height="354" rx="16" fill="url(#holoGrid)" stroke="#86e8da" stroke-opacity="0.18" stroke-width="1"/>
+
+    <!-- Left Conduit Rail (01 -> 02 -> 03 -> 04 with animated pulse packet) -->
+    <line x1="14" y1="56" x2="14" y2="338" stroke="#2a3134" stroke-width="2"/>
+    <rect x="12.5" y="56" width="3" height="28" rx="1.5" fill="#86e8da">
+      <animate attributeName="y" values="56;310;56" dur="4s" repeatCount="indefinite"/>
+    </rect>
+
+    <!-- Conduit Node 01 (Mint) -->
+    <rect x="0" y="46" width="28" height="24" rx="6" fill="#112624" stroke="#86e8da" stroke-width="1.2"/>
+    <text x="14" y="62" text-anchor="middle" fill="#86e8da" font-family="'JetBrains Mono', ui-monospace, monospace" font-size="10.5" font-weight="700">01</text>
+
+    <!-- Conduit Node 02 (Blue) -->
+    <rect x="0" y="132" width="28" height="24" rx="6" fill="#122233" stroke="#85bcf5" stroke-width="1.2"/>
+    <text x="14" y="148" text-anchor="middle" fill="#85bcf5" font-family="'JetBrains Mono', ui-monospace, monospace" font-size="10.5" font-weight="700">02</text>
+
+    <!-- Conduit Node 03 (Purple) -->
+    <rect x="0" y="218" width="28" height="24" rx="6" fill="#1e192e" stroke="#c5a0f0" stroke-width="1.2"/>
+    <text x="14" y="234" text-anchor="middle" fill="#c5a0f0" font-family="'JetBrains Mono', ui-monospace, monospace" font-size="10.5" font-weight="700">03</text>
+
+    <!-- Conduit Node 04 (Amber) -->
+    <rect x="0" y="304" width="28" height="24" rx="6" fill="#272015" stroke="#e8bd75" stroke-width="1.2"/>
+    <text x="14" y="320" text-anchor="middle" fill="#e8bd75" font-family="'JetBrains Mono', ui-monospace, monospace" font-size="10.5" font-weight="700">04</text>
+
+    <!-- DECK 01: UI LAYER (Mint #86e8da) -->
+    <g transform="translate(46, 30)">
+      <rect width="532" height="74" rx="13" fill="url(#plane01)" stroke="#86e8da" stroke-opacity="0.65" stroke-width="1.2"/>
+      <rect x="4" y="4" width="524" height="66" rx="10" fill="none" stroke="#86e8da" stroke-opacity="0.16" stroke-width="1"/>
+      <text x="18" y="26" fill="#86e8da" font-family="'JetBrains Mono', ui-monospace, monospace" font-size="10.5" font-weight="700" letter-spacing="0.6">01 // UI LAYER</text>
+      <rect x="132" y="13" width="54" height="18" rx="4" fill="#091615" stroke="#86e8da" stroke-opacity="0.4" stroke-width="0.8"/>
+      <text x="159" y="25" text-anchor="middle" fill="#86e8da" font-family="'JetBrains Mono', ui-monospace, monospace" font-size="9.5" font-weight="600">60 FPS</text>
+      <text x="18" y="54" fill="#e2f7f3" font-family="'Be Vietnam Pro', -apple-system, sans-serif" font-size="17" font-weight="700">App interface</text>
+      <!-- Right Core Visual -->
+      <rect x="256" y="12" width="128" height="50" rx="7" fill="#091514" stroke="#86e8da" stroke-opacity="0.3" stroke-width="1"/>
+      <circle cx="268" cy="24" r="3" fill="#86e8da"/>
+      <text x="277" y="27" fill="#86e8da" font-family="'JetBrains Mono', ui-monospace, monospace" font-size="9.5">Screen · UI</text>
+      <rect x="265" y="34" width="62" height="18" rx="3" fill="#86e8da" fill-opacity="0.22" stroke="#86e8da" stroke-opacity="0.45"/>
+      <rect x="333" y="34" width="42" height="18" rx="3" fill="#86e8da" fill-opacity="0.08" stroke="#86e8da" stroke-opacity="0.25"/>
+      <rect x="396" y="15" width="120" height="20" rx="4" fill="#091514" stroke="#86e8da" stroke-opacity="0.28"/>
+      <text x="456" y="28" text-anchor="middle" fill="#e2f7f3" font-family="'JetBrains Mono', ui-monospace, monospace" font-size="9.5">Components</text>
+      <rect x="396" y="41" width="120" height="20" rx="4" fill="#091514" stroke="#86e8da" stroke-opacity="0.28"/>
+      <text x="456" y="54" text-anchor="middle" fill="#86e8da" font-family="'JetBrains Mono', ui-monospace, monospace" font-size="9.5">Touch · Nav</text>
+    </g>
+
+    <!-- DECK 02: REACT NATIVE BRIDGE (Sky Blue #85bcf5) -->
+    <g transform="translate(46, 116)">
+      <rect width="532" height="74" rx="13" fill="url(#plane02)" stroke="#85bcf5" stroke-opacity="0.65" stroke-width="1.2"/>
+      <rect x="4" y="4" width="524" height="66" rx="10" fill="none" stroke="#85bcf5" stroke-opacity="0.16" stroke-width="1"/>
+      <text x="18" y="26" fill="#85bcf5" font-family="'JetBrains Mono', ui-monospace, monospace" font-size="10.5" font-weight="700" letter-spacing="0.6">02 // SHARED LOGIC</text>
+      <rect x="156" y="13" width="72" height="18" rx="4" fill="#0a1420" stroke="#85bcf5" stroke-opacity="0.4" stroke-width="0.8"/>
+      <text x="192" y="25" text-anchor="middle" fill="#85bcf5" font-family="'JetBrains Mono', ui-monospace, monospace" font-size="9.5" font-weight="600">RN BRIDGE</text>
+      <text x="18" y="54" fill="#e6f1fd" font-family="'Be Vietnam Pro', -apple-system, sans-serif" font-size="17" font-weight="700">React Native</text>
+      <!-- Right Core Visual: TS / State -> JSI Bridge -> Native -->
+      <rect x="242" y="13" width="76" height="22" rx="4" fill="#0a1420" stroke="#85bcf5" stroke-opacity="0.3"/>
+      <text x="280" y="27" text-anchor="middle" fill="#e6f1fd" font-family="'JetBrains Mono', ui-monospace, monospace" font-size="9.5">TS / State</text>
+      <line x1="318" y1="24" x2="340" y2="24" stroke="#85bcf5" stroke-opacity="0.5" stroke-width="1.2"/>
+      <rect x="340" y="13" width="82" height="22" rx="4" fill="#85bcf5" fill-opacity="0.18" stroke="#85bcf5" stroke-opacity="0.65"/>
+      <text x="381" y="27" text-anchor="middle" fill="#85bcf5" font-family="'JetBrains Mono', ui-monospace, monospace" font-size="9.5" font-weight="700">JSI Bridge</text>
+      <line x1="422" y1="24" x2="444" y2="24" stroke="#85bcf5" stroke-opacity="0.5" stroke-width="1.2"/>
+      <rect x="444" y="13" width="72" height="22" rx="4" fill="#0a1420" stroke="#85bcf5" stroke-opacity="0.3"/>
+      <text x="480" y="27" text-anchor="middle" fill="#e6f1fd" font-family="'JetBrains Mono', ui-monospace, monospace" font-size="9.5">Native</text>
+      <rect x="242" y="42" width="274" height="21" rx="4" fill="#09121c"/>
+      <text x="252" y="56" fill="#a2aaa9" font-family="'JetBrains Mono', ui-monospace, monospace" font-size="9.5">
+        <tspan fill="#85bcf5">const</tspan> bridge = { engine: <tspan fill="#e6f1fd">'Hermes · JSI'</tspan>, sync: <tspan fill="#86e8da">'live'</tspan> }
+      </text>
+    </g>
+
+    <!-- DECK 03: PLATFORM OS (Lavender Purple #c5a0f0) -->
+    <g transform="translate(46, 202)">
+      <rect width="532" height="74" rx="13" fill="url(#plane03)" stroke="#c5a0f0" stroke-opacity="0.65" stroke-width="1.2"/>
+      <rect x="4" y="4" width="524" height="66" rx="10" fill="none" stroke="#c5a0f0" stroke-opacity="0.16" stroke-width="1"/>
+      <text x="18" y="26" fill="#c5a0f0" font-family="'JetBrains Mono', ui-monospace, monospace" font-size="10.5" font-weight="700" letter-spacing="0.6">03 // PLATFORM OS</text>
+      <rect x="148" y="13" width="88" height="18" rx="4" fill="#120f1d" stroke="#c5a0f0" stroke-opacity="0.4" stroke-width="0.8"/>
+      <text x="192" y="25" text-anchor="middle" fill="#c5a0f0" font-family="'JetBrains Mono', ui-monospace, monospace" font-size="9.5" font-weight="600">CAMERAX · OS</text>
+      <text x="18" y="54" fill="#f3ebfc" font-family="'Be Vietnam Pro', -apple-system, sans-serif" font-size="17" font-weight="700">Android / Kotlin</text>
+      <!-- Right Core Visual -->
+      <rect x="256" y="14" width="110" height="20" rx="4" fill="#110e1b" stroke="#c5a0f0" stroke-opacity="0.32"/>
+      <text x="311" y="27" text-anchor="middle" fill="#f3ebfc" font-family="'JetBrains Mono', ui-monospace, monospace" font-size="9.5">Lifecycle · OS</text>
+      <rect x="256" y="40" width="110" height="20" rx="4" fill="#110e1b" stroke="#c5a0f0" stroke-opacity="0.32"/>
+      <text x="311" y="53" text-anchor="middle" fill="#c5a0f0" font-family="'JetBrains Mono', ui-monospace, monospace" font-size="9.5">CameraX · IPC</text>
+      <rect x="378" y="14" width="138" height="46" rx="6" fill="#110e1b" stroke="#c5a0f0" stroke-opacity="0.4"/>
+      <rect x="388" y="22" width="44" height="30" rx="4" fill="#c5a0f0" fill-opacity="0.12" stroke="#c5a0f0" stroke-width="1"/>
+      <line x1="390" y1="26" x2="430" y2="26" stroke="#c5a0f0" stroke-width="1.5">
+        <animate attributeName="y1" values="24;48;24" dur="2.2s" repeatCount="indefinite"/>
+        <animate attributeName="y2" values="24;48;24" dur="2.2s" repeatCount="indefinite"/>
+      </line>
+      <text x="444" y="35" fill="#f3ebfc" font-family="'JetBrains Mono', ui-monospace, monospace" font-size="10.5" font-weight="700">KOTLIN</text>
+      <text x="444" y="49" fill="#c5a0f0" font-family="'JetBrains Mono', ui-monospace, monospace" font-size="9">DEVICE HW</text>
+    </g>
+
+    <!-- DECK 04: NATIVE CORE (Warm Amber #e8bd75) -->
+    <g transform="translate(46, 288)">
+      <rect width="532" height="74" rx="13" fill="url(#plane04)" stroke="#e8bd75" stroke-opacity="0.7" stroke-width="1.2"/>
+      <rect x="4" y="4" width="524" height="66" rx="10" fill="none" stroke="#e8bd75" stroke-opacity="0.16" stroke-width="1"/>
+      <text x="18" y="26" fill="#e8bd75" font-family="'JetBrains Mono', ui-monospace, monospace" font-size="10.5" font-weight="700" letter-spacing="0.6">04 // NATIVE CORE</text>
+      <rect x="148" y="13" width="84" height="18" rx="4" fill="#17120a" stroke="#e8bd75" stroke-opacity="0.4" stroke-width="0.8"/>
+      <text x="190" y="25" text-anchor="middle" fill="#e8bd75" font-family="'JetBrains Mono', ui-monospace, monospace" font-size="9.5" font-weight="600">MAVEN · AAR</text>
+      <text x="18" y="54" fill="#fbf3e4" font-family="'Be Vietnam Pro', -apple-system, sans-serif" font-size="17" font-weight="700">Native SDK</text>
+      <!-- Right Core Visual -->
+      <rect x="256" y="14" width="144" height="46" rx="6" fill="#16120b" stroke="#e8bd75" stroke-opacity="0.48"/>
+      <text x="328" y="33" text-anchor="middle" fill="#fbf3e4" font-family="'JetBrains Mono', ui-monospace, monospace" font-size="10" font-weight="700">KOTLIN · JAVA</text>
+      <text x="328" y="49" text-anchor="middle" fill="#e8bd75" font-family="'JetBrains Mono', ui-monospace, monospace" font-size="9.5">TFLITE / ML KIT</text>
+      <rect x="410" y="14" width="106" height="20" rx="4" fill="#16120b" stroke="#e8bd75" stroke-opacity="0.32"/>
+      <text x="463" y="27" text-anchor="middle" fill="#e8bd75" font-family="'JetBrains Mono', ui-monospace, monospace" font-size="9.5">Maven AAR</text>
+      <rect x="410" y="40" width="106" height="20" rx="4" fill="#16120b" stroke="#e8bd75" stroke-opacity="0.32"/>
+      <text x="463" y="53" text-anchor="middle" fill="#fbf3e4" font-family="'JetBrains Mono', ui-monospace, monospace" font-size="9.5">Library API</text>
+    </g>
+  </g>
+
+  <!-- ==================== BOTTOM BASELINE STRIP (lh-baseline from HomePage.tsx) ==================== -->
+  <g transform="translate(0, 488)">
+    <line x1="44" y1="0" x2="1156" y2="0" stroke="#2a3134" stroke-width="1"/>
+    <line x1="44" y1="54" x2="1156" y2="54" stroke="#2a3134" stroke-width="1"/>
+
+    <!-- 01 / EXPERIENCE (Purple #c5a0f0) -->
+    <text x="44" y="32" font-family="'JetBrains Mono', ui-monospace, monospace" font-size="11.5">
+      <tspan fill="#a2aaa9">01 / EXPERIENCE</tspan>
+      <tspan dx="10" fill="#c5a0f0" font-weight="700">3.5+ YOE</tspan>
+    </text>
+
+    <!-- 02 / CROSS-PLATFORM (Blue #85bcf5) -->
+    <text x="262" y="32" font-family="'JetBrains Mono', ui-monospace, monospace" font-size="11.5">
+      <tspan fill="#a2aaa9">02 / CROSS-PLATFORM</tspan>
+      <tspan dx="10" fill="#85bcf5" font-weight="700">React Native</tspan>
+    </text>
+
+    <!-- 03 / PLATFORM (Mint #86e8da) -->
+    <text x="530" y="32" font-family="'JetBrains Mono', ui-monospace, monospace" font-size="11.5">
+      <tspan fill="#a2aaa9">03 / PLATFORM</tspan>
+      <tspan dx="10" fill="#86e8da" font-weight="700">Android / Kotlin</tspan>
+    </text>
+
+    <!-- 04 / CAPABILITIES (Amber #e8bd75) -->
+    <text x="774" y="32" font-family="'JetBrains Mono', ui-monospace, monospace" font-size="11.5">
+      <tspan fill="#a2aaa9">04 / CAPABILITIES</tspan>
+      <tspan dx="10" fill="#e8bd75" font-weight="700">Native SDK</tspan>
+    </text>
+
+    <!-- Location Right -->
+    <circle cx="998" cy="28" r="3.5" fill="#86e8da"/>
+    <text x="1156" y="32" text-anchor="end" font-family="'JetBrains Mono', ui-monospace, monospace" font-size="11.5">
+      <tspan fill="#f0f2f0" font-weight="700">TP. Hồ Chí Minh</tspan>
+      <tspan dx="6" fill="#86e8da">VIETNAM ↗</tspan>
+    </text>
+  </g>
+</svg>
