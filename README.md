@@ -189,23 +189,27 @@
   <tr>
     <td width="25%" align="center" valign="top">
       <p><kbd>01 // PORTFOLIO</kbd></p>
-      <p><a href="https://devtiendang.blog"><b>devtiendang.blog ↗</b></a></p>
-      <p><sub>Interactive Work &amp; Blog</sub></p>
+      <p><a href="https://devtiendang.blog"><b>devtiendang.blog</b></a></p>
+      <p><sub>Interactive portfolio, apps, playground &amp; technical blog</sub></p>
+      <p><a href="https://devtiendang.blog"><kbd> 🌐 Visit Website ↗ </kbd></a></p>
     </td>
     <td width="25%" align="center" valign="top">
       <p><kbd>02 // DIRECT EMAIL</kbd></p>
-      <p><a href="mailto:dvtien8599@gmail.com"><b>dvtien8599@gmail.com ↗</b></a></p>
-      <p><sub>Work &amp; Collaboration</sub></p>
+      <p><a href="mailto:dvtien8599@gmail.com"><b>dvtien8599@gmail.com</b></a></p>
+      <p><sub>Direct inbox for mobile engineering &amp; project inquiries</sub></p>
+      <p><a href="mailto:dvtien8599@gmail.com"><kbd> ✉️ Send Email ↗ </kbd></a></p>
     </td>
     <td width="25%" align="center" valign="top">
       <p><kbd>03 // LINKEDIN</kbd></p>
-      <p><a href="https://www.linkedin.com/in/%C4%91%E1%BA%B7ng-v%C4%83n-ti%E1%BA%BFn/"><b>Đặng Văn Tiến ↗</b></a></p>
-      <p><sub>Professional Network</sub></p>
+      <p><a href="https://www.linkedin.com/in/%C4%91%E1%BA%B7ng-v%C4%83n-ti%E1%BA%BFn/"><b>Đặng Văn Tiến</b></a></p>
+      <p><sub>Professional background, career updates &amp; networking</sub></p>
+      <p><a href="https://www.linkedin.com/in/%C4%91%E1%BA%B7ng-v%C4%83n-ti%E1%BA%BFn/"><kbd> 💼 Connect ↗ </kbd></a></p>
     </td>
     <td width="25%" align="center" valign="top">
       <p><kbd>04 // FACEBOOK</kbd></p>
-      <p><a href="https://www.facebook.com/dvtien8599"><b>fb.com/dvtien8599 ↗</b></a></p>
-      <p><sub>Direct Message</sub></p>
+      <p><a href="https://www.facebook.com/dvtien8599"><b>fb.com/dvtien8599</b></a></p>
+      <p><sub>Quick direct message, community &amp; personal updates</sub></p>
+      <p><a href="https://www.facebook.com/dvtien8599"><kbd> 💬 Message ↗ </kbd></a></p>
     </td>
   </tr>
 </table>
