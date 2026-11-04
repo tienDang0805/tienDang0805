@@ -1,0 +1,35 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 136" width="100%" height="100%">
+  <!-- Top Section Divider Line + Accent Bar -->
+  <line x1="0" y1="2" x2="1200" y2="2" stroke="#2a3134" stroke-width="1.2"/>
+  <rect x="0" y="1" width="64" height="3" rx="1.5" fill="#c5a0f0"/>
+
+  <!-- Kicker Row (.lh-kicker on devtiendang.blog) -->
+  <g transform="translate(0, 20)">
+    <rect x="0" y="0" width="32" height="22" rx="6" fill="#1b1526" stroke="#c5a0f0" stroke-opacity="0.65" stroke-width="1.2"/>
+    <text x="16" y="15" text-anchor="middle" fill="#c5a0f0" font-family="'Courier New', monospace" font-size="11" font-weight="700">↻</text>
+    <text x="44" y="15" fill="#c5a0f0" font-family="'Courier New', monospace" font-size="12" font-weight="700" letter-spacing="1.2">DEVELOPMENT / AGENTIC WORKFLOW</text>
+    <text x="1200" y="15" text-anchor="end" fill="#a2aaa9" font-family="'Courier New', monospace" font-size="11" letter-spacing="0.8">CODEX · CLIPROXY · ARGON</text>
+  </g>
+
+  <!-- 2-Column Editorial Section Heading (.lh-section-heading on devtiendang.blog) -->
+  <g transform="translate(0, 62)">
+    <!-- Left Column: Big Two-Tone Display Title -->
+    <text x="0" y="24" fill="#f0f2f0" font-family="'Be Vietnam Pro', -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Helvetica, Arial, sans-serif" font-size="34" font-weight="800" letter-spacing="-1.1">
+      Agentic coding.
+    </text>
+    <text x="0" y="64" font-family="'Be Vietnam Pro', -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Helvetica, Arial, sans-serif" font-size="34" font-weight="800" letter-spacing="-1.1">
+      <tspan fill="#c5a0f0">Antigravity</tspan><tspan fill="#a2aaa9" font-weight="400"> / </tspan><tspan fill="#86e8da">Codex.</tspan>
+    </text>
+
+    <!-- Vertical Hairline Separator -->
+    <line x1="535" y1="4" x2="535" y2="66" stroke="#2a3134" stroke-width="1"/>
+
+    <!-- Right Column: Editorial Lead Paragraph -->
+    <text x="565" y="26" fill="#a2aaa9" font-family="'Be Vietnam Pro', -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Helvetica, Arial, sans-serif" font-size="15.5">
+      How I build software daily: pairing OpenAI Codex Desktop and MCP tools
+    </text>
+    <text x="565" y="52" fill="#a2aaa9" font-family="'Be Vietnam Pro', -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Helvetica, Arial, sans-serif" font-size="15.5">
+      with Gemini 4 Argon (High) via CLIProxyAPI (:8317) to plan, code &amp; verify.
+    </text>
+  </g>
+</svg>
