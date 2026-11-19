@@ -7,26 +7,12 @@
 <br />
 
 <p align="center">
-  <img src="./header-agentic.svg" width="100%" alt="↻ DEVELOPMENT / AGENTIC WORKFLOW — Agentic coding. Antigravity / Codex." />
-</p>
-
-<p>
-  <samp>01 // MY RUNNING STACK</samp> — <b>OpenAI Codex Desktop</b> paired with <b>MCP tools</b> (<code>apply_patch</code>, <code>exec_command</code>, <code>cua_repl</code>, <code>github</code>) routed through <code>CLIProxyAPI (127.0.0.1:8317)</code> to run <b>Gemini 4 Argon (High)</b>:
-</p>
-
-<p align="center">
-  <a href="https://devtiendang.blog/blog">
-    <img src="./agentic-stack.svg" width="100%" alt="01 My Running Agentic Stack — OpenAI Codex, MCP Harness, CLIProxyAPI :8317, Gemini 4 Argon" />
-  </a>
-</p>
-
-<p>
-  <samp>02 // EXECUTION LOOP</samp> — Continuous <b>Plan → Build → Review → Verify</b> workflow with small verifiable diffs:
+  <img src="./header-agentic.svg" width="100%" alt="Agentic coding with Codex." />
 </p>
 
 <p align="center">
   <a href="https://devtiendang.blog/#agentic-flow">
-    <img src="./agentic-loop.svg" width="100%" alt="02 Agentic Coding Flow — 01 plan -> 02 build -> 03 review -> 04 verify" />
+    <img src="./agentic-loop.svg" width="100%" alt="Agentic workflow: plan, build, review, verify" />
   </a>
 </p>
 
@@ -80,18 +66,13 @@
 
 <table>
   <tr>
-    <td width="33.3%" valign="top">
+    <td width="50%" valign="top">
       <p><sub><samp>01 // AI · AGENT</samp></sub></p>
       <p><a href="https://devtiendang.blog/blog"><b>Demystifying AI Agents, Code Harnesses &amp; MCP ↗</b></a></p>
       <p><sub>Why the same LLM feels genius in one coding harness and clueless in another — explained with interactive 50 FPS diagrams.</sub></p>
     </td>
-    <td width="33.3%" valign="top">
-      <p><sub><samp>02 // AI · AGENT</samp></sub></p>
-      <p><a href="https://devtiendang.blog/blog"><b>Running Gemini 4 Argon Inside OpenAI Codex via CLIProxyAPI ↗</b></a></p>
-      <p><sub>How I bridged Antigravity models into the OpenAI Codex desktop harness using a local proxy on port 8317.</sub></p>
-    </td>
-    <td width="33.3%" valign="top">
-      <p><sub><samp>03 // STORYTELLING</samp></sub></p>
+    <td width="50%" valign="top">
+      <p><sub><samp>02 // STORYTELLING</samp></sub></p>
       <p><a href="https://devtiendang.blog/blog"><b>Why a Mobile Dev Built a 24/7 Discord Bot — ChatDVT ↗</b></a></p>
       <p><sub>Behind the scenes of turning a group-chat joke into a cloud-hosted AI companion running on AWS EC2.</sub></p>
     </td>

@@ -1,4 +1,24 @@
 <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 500" width="100%" height="100%">
+  <style>
+    .phone-scene { opacity: 0; }
+    .phone-scene--first { opacity: 1; }
+    .phone-title { fill: currentColor; font-size: 26px; font-weight: 700; letter-spacing: -.65px; }
+    .phone-copy { fill: #c5d3d2; font-size: 13px; }
+    .phone-code { fill: currentColor; font: 11.5px ui-monospace, 'Courier New', monospace; }
+
+    @media (prefers-reduced-motion: no-preference) {
+      /* Eight scenes, four seconds each, with a 160 ms crossfade. */
+      .phone-scene {
+        animation: phone-scene 32s linear infinite;
+        animation-delay: calc(var(--start, 0s) - 32.16s);
+      }
+
+      @keyframes phone-scene {
+        0%, 13%, 100% { opacity: 0; }
+        .5%, 12.5% { opacity: 1; }
+      }
+    }
+  </style>
   <defs>
     <linearGradient id="bg01" x1="0%" y1="0%" x2="100%" y2="100%">
       <stop offset="0%" stop-color="#090b0d"/>
@@ -14,6 +34,11 @@
         <animate attributeName="stop-color" values="#86e8da;#36f5ed;#86e8da" dur="5s" repeatCount="indefinite"/>
       </stop>
     </linearGradient>
+    <rect id="phonePanel" x="20" y="150" width="156" height="96" rx="8" fill="currentColor" fill-opacity=".12"/>
+    <g id="crmPreview" fill="none" stroke="currentColor" stroke-width="1.2" stroke-linecap="round">
+      <rect width="33" height="47" rx="5" fill="#152a31"/>
+      <path d="M7 18h4m4 0h11M7 28h4m4 0h11M7 36h4m4 0h11"/>
+    </g>
     <g id="barcodeLabel">
       <rect width="23" height="9" rx="1" fill="#102322" stroke="#79cfc1" stroke-opacity=".55" stroke-width=".7"/>
       <path d="M3 2v5m3-5v5m4-5v5m3-5v5m5-5v5m2-5v5" stroke="#abe8df" stroke-width=".85"/>
@@ -96,12 +121,12 @@
       </g>
     </g>
 
-    <!-- Android phone, matching the CameraX scene on devtiendang.blog. -->
+    <!-- Android phone, in the same scene order as devtiendang.blog. -->
     <g transform="translate(754 21) rotate(-1.8 98 171)" font-family="'Be Vietnam Pro', -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Helvetica, Arial, sans-serif">
       <rect x="195" y="55" width="3" height="30" rx="1.5" fill="#495154"/>
       <rect x="195" y="94" width="3" height="15" rx="1.5" fill="#495154"/>
       <rect x=".75" y=".75" width="194.5" height="340.5" rx="27" fill="#272d30" stroke="#495154" stroke-width="1.5"/>
-      <rect x="5" y="5" width="186" height="332" rx="23" fill="#132729"/>
+      <rect x="5" y="5" width="186" height="332" rx="23" fill="#151e21"/>
 
       <!-- Android system bar -->
       <text x="20" y="27" fill="#edf2f4" font-size="11" font-weight="650">10:24</text>
@@ -113,23 +138,134 @@
         <rect x="24.5" y="3" width="7" height="3.5" rx=".3" fill="#c9d5d5" stroke="none"/>
       </g>
 
-      <text x="20" y="83" fill="#80dfd1" font-size="26" font-weight="700" letter-spacing="-.65">CameraX</text>
-      <text x="20" y="104" fill="#c5d3d2" font-size="13">
-        <tspan x="20">Captures with CameraX.</tspan>
-        <tspan x="20" dy="16">Finds boxes with TFLite.</tspan>
-        <tspan x="20" dy="16">ML Kit reads barcodes.</tspan>
-      </text>
+      <g class="phone-scene phone-scene--first" style="color:#8ce5fb">
+        <text class="phone-title" x="20" y="83">React Native</text>
+        <text class="phone-copy" x="20" y="107">CRM interfaces for</text>
+        <text class="phone-copy" x="20" y="125">iOS and Android.</text>
+        <use href="#phonePanel"/>
+        <g fill="none" stroke="currentColor" stroke-width="1.2" stroke-linecap="round" stroke-linejoin="round">
+          <rect x="89" y="165" width="18" height="11" rx="3"/>
+          <path d="M98 176v8m-37 8v-8h74v8"/>
+        </g>
+        <use href="#crmPreview" x="44.5" y="192" transform="translate(0 -2)"/>
+        <use href="#crmPreview" x="118.5" y="192" transform="translate(0 -2)"/>
+        <path d="M58 196h6" stroke="currentColor" stroke-width="1.2" stroke-linecap="round"/>
+        <circle cx="135" cy="196" r="1.2" fill="currentColor"/>
+        <text class="phone-copy" x="20" y="269">One component,</text>
+        <text class="phone-copy" x="20" y="287">both platforms</text>
+      </g>
 
-      <rect x="20" y="150" width="156" height="96" rx="8" fill="#1a3636"/>
-      <path d="M29 171v-12h12m114 0h12v12m0 54v12h-12m-114 0H29v-12" fill="none" stroke="#79cfc1" stroke-opacity=".74" stroke-width="1.2" stroke-linecap="round" stroke-linejoin="round"/>
-      <use href="#scanParcel" x="38" y="180"/>
-      <use href="#scanParcel" x="81" y="167"/>
-      <use href="#scanParcel" x="124" y="183"/>
+      <g class="phone-scene" style="--start:4s;color:#8cbcf5">
+        <text class="phone-title" x="20" y="83">TypeScript</text>
+        <text class="phone-copy" x="20" y="107">Shared types for the blog</text>
+        <text class="phone-copy" x="20" y="125">and its API.</text>
+        <use href="#phonePanel"/>
+        <g class="phone-code">
+          <text x="31" y="173" font-weight="700">BlogCategoryId</text>
+          <text x="31" y="192">  | 'story' | 'mobile'</text>
+          <text x="31" y="211">  | 'ai'</text>
+          <text x="31" y="230">  | 'side-project'</text>
+        </g>
+        <text class="phone-copy" x="20" y="269">Types used by the blog</text>
+      </g>
 
-      <text x="20" y="267" fill="#c5d3d2" font-size="13">
-        <tspan x="20">Multiple barcodes per box</tspan>
-        <tspan x="20" dy="18">in one image</tspan>
-      </text>
+      <g class="phone-scene" style="--start:8s;color:#f2ba77">
+        <text class="phone-title" x="20" y="83">Woni Robot</text>
+        <text class="phone-copy" x="20" y="107">Debugging the vendor SDK</text>
+        <text class="phone-copy" x="20" y="125">on Woni’s Android tablet.</text>
+        <use href="#phonePanel"/>
+        <g fill="none" stroke="currentColor" stroke-width="1.3" stroke-linecap="round" stroke-linejoin="round">
+          <path d="M34 229h130" stroke-dasharray="3 4" stroke-opacity=".65"/>
+          <g transform="translate(65 228) scale(.83)">
+            <path d="M-22-7v3c0 3 8 4 22 4s22-1 22-4v-3M-16-15h32l6 8c-3 3-12 4-22 4s-19-1-22-4z" fill="#382e23"/>
+            <path d="M-7-57v8m14-8v8M-12-50h24c7 0 12 5 13 12l2 9c0 4-3 6-8 6l-3 10c-9 5-23 5-32 0l-3-10c-5 0-8-2-8-6l2-9c1-7 6-12 13-12z" fill="#382e23"/>
+            <rect x="-12" y="-44" width="24" height="20" rx="3" fill="#201e1b"/>
+            <path d="M-7-38h9m-9 4H7m-14 4h6"/>
+            <path d="M-16-62c0-7 6-12 16-12s16 5 16 12c0 6-5 9-16 9s-16-3-16-9z" fill="#382e23"/>
+            <rect x="-10" y="-68" width="20" height="9" rx="4.5" fill="#201e1b"/>
+            <circle cy="-63.5" r="1.4" fill="currentColor" stroke="none"/>
+          </g>
+          <path d="M151 227v-17h11v17m-8-12h5m-5 4h5"/>
+        </g>
+        <text class="phone-copy" x="20" y="269">Tablet · Java bridge</text>
+        <text class="phone-copy" x="20" y="287">Vendor SDK</text>
+      </g>
+
+      <g class="phone-scene" style="--start:12s;color:#a4d898">
+        <text class="phone-title" x="20" y="83">ChatDVT</text>
+        <text class="phone-copy" x="20" y="107">My Discord bot, built with</text>
+        <text class="phone-copy" x="20" y="125">Node.js and Discord.js.</text>
+        <use href="#phonePanel"/>
+        <g text-anchor="middle" font-size="13" fill="currentColor">
+          <text x="98" y="174">Discord</text>
+          <text x="98" y="202" font-weight="700">Node.js · ChatDVT</text>
+          <text x="98" y="230">Gemini</text>
+        </g>
+        <path d="M51 174v48l-3-3m3 3 3-3m91 3v-48l-3 3m3-3 3 3" fill="none" stroke="currentColor" stroke-opacity=".65" stroke-linecap="round" stroke-linejoin="round"/>
+        <text class="phone-copy" x="20" y="269">Replies back in Discord</text>
+      </g>
+
+      <g class="phone-scene" style="--start:16s;color:#c8a8ff">
+        <text class="phone-title" x="20" y="83">Kotlin</text>
+        <text class="phone-copy" x="20" y="107">Run inference at capture</text>
+        <text class="phone-copy" x="20" y="125">to keep preview responsive.</text>
+        <use href="#phonePanel"/>
+        <path d="M36 174v48" fill="none" stroke="currentColor" stroke-opacity=".6"/>
+        <path d="M36 174h.1m-.1 24h.1m-.1 24h.1" stroke="currentColor" stroke-width="5" stroke-linecap="round"/>
+        <g fill="currentColor" font-size="12.5">
+          <text x="49" y="178">Capture the image</text>
+          <text x="49" y="202">Find boxes · TFLite</text>
+          <text x="49" y="226">Read codes · ML Kit</text>
+        </g>
+        <text class="phone-copy" x="20" y="269">Results grouped by box</text>
+      </g>
+
+      <g class="phone-scene" style="--start:20s;color:#88e5ad">
+        <text class="phone-title" x="20" y="83">Android</text>
+        <text class="phone-copy" x="20" y="107">Upgrade for 16 KB</text>
+        <text class="phone-copy" x="20" y="125">memory page sizes.</text>
+        <use href="#phonePanel"/>
+        <g fill="none" stroke="currentColor" stroke-width="1.2" stroke-linejoin="round">
+          <path d="m56 199 42 20 42-20m-84 12 42 20 42-20" stroke-opacity=".55"/>
+          <path d="m52 187 46-20 46 20-46 21z" fill="#24453a"/>
+          <path d="M85 189a13 11 0 0 1 26 0z" fill="currentColor"/>
+          <path d="m90 181-3-5m19 5 3-5" stroke-linecap="round"/>
+          <path d="M93 186h.1m9.9 0h.1" stroke="#24453a" stroke-width="2" stroke-linecap="round"/>
+        </g>
+        <text class="phone-copy" x="20" y="269">Gradle, NDK and native</text>
+        <text class="phone-copy" x="20" y="287">libraries</text>
+      </g>
+
+      <g class="phone-scene" style="--start:24s;color:#80dfd1">
+        <text class="phone-title" x="20" y="83">CameraX</text>
+        <text class="phone-copy" x="20" y="104">Captures with CameraX.</text>
+        <text class="phone-copy" x="20" y="120">Finds boxes with TFLite.</text>
+        <text class="phone-copy" x="20" y="136">ML Kit reads barcodes.</text>
+        <use href="#phonePanel"/>
+        <path d="M29 171v-12h12m114 0h12v12m0 54v12h-12m-114 0H29v-12" fill="none" stroke="#79cfc1" stroke-opacity=".74" stroke-width="1.2" stroke-linecap="round" stroke-linejoin="round"/>
+        <use href="#scanParcel" x="38" y="180"/>
+        <use href="#scanParcel" x="81" y="167"/>
+        <use href="#scanParcel" x="124" y="183"/>
+        <text class="phone-copy" x="20" y="269">Multiple barcodes per box</text>
+        <text class="phone-copy" x="20" y="287">in one image</text>
+      </g>
+
+      <g class="phone-scene" style="--start:28s;color:#efcd89">
+        <text class="phone-title" x="20" y="83">Native SDK</text>
+        <text class="phone-copy" x="20" y="107">Versioned SDK releases</text>
+        <text class="phone-copy" x="20" y="125">on private Repsy Maven.</text>
+        <use href="#phonePanel"/>
+        <text x="31" y="171" fill="currentColor" font-size="12" font-weight="700">Maven Publish · Repsy</text>
+        <path d="M31 179h134" stroke="currentColor" stroke-opacity=".28"/>
+        <g class="phone-code">
+          <text x="31" y="195">implementation(</text>
+          <text x="39" y="212">"groupId:artifactId:</text>
+          <text x="39" y="229"><tspan font-weight="700">version</tspan>")</text>
+        </g>
+        <text class="phone-copy" x="20" y="269">Teams pin the SDK version</text>
+        <text class="phone-copy" x="20" y="287">in Gradle</text>
+      </g>
+
       <rect x="76" y="326" width="44" height="2.5" rx="1.25" fill="#9baead"/>
     </g>
 
