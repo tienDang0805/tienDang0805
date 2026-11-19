@@ -6,6 +6,19 @@
     .phone-copy { fill: #c5d3d2; font-size: 13px; }
     .phone-code { fill: currentColor; font: 11.5px ui-monospace, 'Courier New', monospace; }
 
+    .tech-tile { fill: #111516; stroke: #333b3d; }
+    .tech-label { fill: #d5dedf; font-size: 14.5px; font-weight: 650; }
+    .tech-wire { fill: none; stroke: #39474b; stroke-dasharray: 3 5; }
+    .tech-selected { fill: none; stroke: currentColor; stroke-opacity: .82; stroke-width: 1.35; }
+    .tech-rn { color: #8ce5fb; }
+    .tech-ts { color: #8cbcf5; --start: 4s; }
+    .tech-java { color: #f2ba77; --start: 8s; }
+    .tech-nodejs { color: #a4d898; --start: 12s; }
+    .tech-kotlin { color: #c8a8ff; --start: 16s; }
+    .tech-android { color: #88e5ad; --start: 20s; }
+    .tech-camerax { color: #80dfd1; --start: 24s; }
+    .tech-maven { color: #efcd89; --start: 28s; }
+
     @media (prefers-reduced-motion: no-preference) {
       /* Eight scenes, four seconds each, with a 160 ms crossfade. */
       .phone-scene {
@@ -34,6 +47,50 @@
         <animate attributeName="stop-color" values="#86e8da;#36f5ed;#86e8da" dur="5s" repeatCount="indefinite"/>
       </stop>
     </linearGradient>
+    <rect id="techTile" width="140" height="42" rx="9"/>
+    <g id="techLogo-rn">
+      <circle cx="18" cy="18" r="3.2" fill="#61dafb" />
+      <ellipse cx="18" cy="18" rx="13.5" ry="5.2" fill="none" stroke="#61dafb" stroke-width="2" />
+      <ellipse cx="18" cy="18" rx="13.5" ry="5.2" fill="none" stroke="#61dafb" stroke-width="2" transform="rotate(60 18 18)" />
+      <ellipse cx="18" cy="18" rx="13.5" ry="5.2" fill="none" stroke="#61dafb" stroke-width="2" transform="rotate(120 18 18)" />
+    </g>
+    <g id="techLogo-ts">
+      <rect x="5" y="5" width="26" height="26" rx="6" fill="#3178c6" />
+      <path d="M10.5 15.2h9v2.2h-3.2V27h-2.6v-9.6h-3.2v-2.2zm15 7.5c0 2.4-1.8 3.9-4.5 3.9-1.8 0-3.2-.5-4.1-1.3l1.3-1.9c.7.6 1.7 1.1 2.7 1.1 1.1 0 1.8-.4 1.8-1.2 0-.7-.6-1-2-1.5-2-.7-3.2-1.5-3.2-3.3 0-2.1 1.7-3.5 4.1-3.5 1.6 0 2.8.4 3.6 1.1l-1.2 1.9c-.6-.4-1.5-.8-2.4-.8-1 0-1.5.4-1.5 1.1 0 .7.6 1 2 1.5 2 .7 3.4 1.5 3.4 2.9z" fill="#fff" />
+    </g>
+    <g id="techLogo-java">
+      <path d="M15 6.5c2.2 2.4-2.4 4.6-.5 7.2 1.3 1.8 3.8 2.8 2.2 6M20.5 9.2c1.7 2-1.7 3.8-.3 5.8 1.1 1.4 2.8 2.4 1.3 4.8" fill="none" stroke="#f97316" stroke-width="2.3" stroke-linecap="round" />
+      <path d="M9 22h14.5v2.8a6 6 0 0 1-6 6h-2.5a6 6 0 0 1-6-6V22z" fill="#38bdf8" />
+      <path d="M23.5 22.8h2.2a2.5 2.5 0 0 1 0 5h-2.2" fill="none" stroke="#38bdf8" stroke-width="2.2" />
+    </g>
+    <g id="techLogo-nodejs">
+      <polygon points="18,4.5 29.5,11 29.5,25 18,31.5 6.5,25 6.5,11" fill="#16a34a" />
+      <path d="M14 22V13.5l8 4.8v4l-4 2.3-4-2.6z" fill="#dcfce7" />
+    </g>
+    <g id="techLogo-kotlin">
+      <path d="M7 7h22L18 18 7 29z" fill="#ac7ef5" />
+      <path d="M7 29l11-11 11 11z" fill="#e98675" />
+    </g>
+    <g id="techLogo-android">
+      <path d="M11 13L8.5 8.6a.8.8 0 0 1 1.4-.8l2.5 4.3a12.6 12.6 0 0 1 11.2 0l2.5-4.3a.8.8 0 1 1 1.4.8L25 13a10.8 10.8 0 0 1 4.2 8.8v1.7H6.8v-1.7A10.8 10.8 0 0 1 11 13z" fill="#3ddc84" />
+      <circle cx="13.8" cy="18" r="1.5" fill="#061510" />
+      <circle cx="22.2" cy="18" r="1.5" fill="#061510" />
+      <rect x="9" y="25" width="18" height="5" rx="2.5" fill="#3ddc84" opacity=".9" />
+    </g>
+    <g id="techLogo-camerax">
+      <rect x="5" y="8" width="26" height="20" rx="5" fill="#0f766e" stroke="#2dd4bf" stroke-width="1.5" />
+      <circle cx="18" cy="18" r="6" fill="none" stroke="#ccfbf1" stroke-width="2.1" />
+      <circle cx="18" cy="18" r="2.5" fill="#2dd4bf" />
+      <circle cx="26" cy="12.5" r="1.4" fill="#fbbf24" />
+    </g>
+    <path id="techWire-rn" d="M704 81C722 81 740 108 768 108"/>
+    <path id="techWire-ts" d="M704 157C722 157 740 161 768 161"/>
+    <path id="techWire-java" d="M704 233C722 233 740 214 768 214"/>
+    <path id="techWire-nodejs" d="M704 309C722 309 740 267 768 267"/>
+    <path id="techWire-kotlin" d="M1005 81C979 81 969 108 941 108"/>
+    <path id="techWire-android" d="M1005 157C979 157 969 161 941 161"/>
+    <path id="techWire-camerax" d="M1005 233C979 233 969 214 941 214"/>
+    <path id="techWire-maven" d="M1005 309C979 309 969 267 941 267"/>
     <rect id="phonePanel" x="20" y="150" width="156" height="96" rx="8" fill="currentColor" fill-opacity=".12"/>
     <g id="crmPreview" fill="none" stroke="currentColor" stroke-width="1.2" stroke-linecap="round">
       <rect width="33" height="47" rx="5" fill="#152a31"/>
@@ -121,6 +178,89 @@
       </g>
     </g>
 
+    <!-- Technology labels and connectors share the phone timeline. -->
+    <g font-family="'Be Vietnam Pro', -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Helvetica, Arial, sans-serif">
+      <g class="tech-rn">
+        <use class="tech-wire" href="#techWire-rn"/>
+        <use class="tech-tile" href="#techTile" x="564" y="60"/>
+        <g class="phone-scene phone-scene--first">
+          <use class="tech-selected" href="#techWire-rn"/>
+          <use class="tech-selected" href="#techTile" x="564" y="60"/>
+        </g>
+        <use href="#techLogo-rn" transform="translate(573 69) scale(.67)"/>
+        <text class="tech-label" x="602" y="86">React Native</text>
+      </g>
+      <g class="tech-ts">
+        <use class="tech-wire" href="#techWire-ts"/>
+        <use class="tech-tile" href="#techTile" x="564" y="136"/>
+        <g class="phone-scene">
+          <use class="tech-selected" href="#techWire-ts"/>
+          <use class="tech-selected" href="#techTile" x="564" y="136"/>
+        </g>
+        <use href="#techLogo-ts" transform="translate(573 145) scale(.67)"/>
+        <text class="tech-label" x="602" y="162">TypeScript</text>
+      </g>
+      <g class="tech-java">
+        <use class="tech-wire" href="#techWire-java"/>
+        <use class="tech-tile" href="#techTile" x="564" y="212"/>
+        <g class="phone-scene">
+          <use class="tech-selected" href="#techWire-java"/>
+          <use class="tech-selected" href="#techTile" x="564" y="212"/>
+        </g>
+        <use href="#techLogo-java" transform="translate(573 221) scale(.67)"/>
+        <text class="tech-label" x="602" y="238">Java · Bridge</text>
+      </g>
+      <g class="tech-nodejs">
+        <use class="tech-wire" href="#techWire-nodejs"/>
+        <use class="tech-tile" href="#techTile" x="564" y="288"/>
+        <g class="phone-scene">
+          <use class="tech-selected" href="#techWire-nodejs"/>
+          <use class="tech-selected" href="#techTile" x="564" y="288"/>
+        </g>
+        <use href="#techLogo-nodejs" transform="translate(573 297) scale(.67)"/>
+        <text class="tech-label" x="602" y="314">Node.js · Bot</text>
+      </g>
+      <g class="tech-kotlin">
+        <use class="tech-wire" href="#techWire-kotlin"/>
+        <use class="tech-tile" href="#techTile" x="1005" y="60"/>
+        <g class="phone-scene">
+          <use class="tech-selected" href="#techWire-kotlin"/>
+          <use class="tech-selected" href="#techTile" x="1005" y="60"/>
+        </g>
+        <use href="#techLogo-kotlin" transform="translate(1014 69) scale(.67)"/>
+        <text class="tech-label" x="1043" y="86">Kotlin</text>
+      </g>
+      <g class="tech-android">
+        <use class="tech-wire" href="#techWire-android"/>
+        <use class="tech-tile" href="#techTile" x="1005" y="136"/>
+        <g class="phone-scene">
+          <use class="tech-selected" href="#techWire-android"/>
+          <use class="tech-selected" href="#techTile" x="1005" y="136"/>
+        </g>
+        <use href="#techLogo-android" transform="translate(1014 145) scale(.67)"/>
+        <text class="tech-label" x="1043" y="162">Android</text>
+      </g>
+      <g class="tech-camerax">
+        <use class="tech-wire" href="#techWire-camerax"/>
+        <use class="tech-tile" href="#techTile" x="1005" y="212"/>
+        <g class="phone-scene">
+          <use class="tech-selected" href="#techWire-camerax"/>
+          <use class="tech-selected" href="#techTile" x="1005" y="212"/>
+        </g>
+        <use href="#techLogo-camerax" transform="translate(1014 221) scale(.67)"/>
+        <text class="tech-label" x="1043" y="238">CameraX</text>
+      </g>
+      <g class="tech-maven">
+        <use class="tech-wire" href="#techWire-maven"/>
+        <use class="tech-tile" href="#techTile" x="1005" y="288"/>
+        <g class="phone-scene">
+          <use class="tech-selected" href="#techWire-maven"/>
+          <use class="tech-selected" href="#techTile" x="1005" y="288"/>
+        </g>
+        <text class="tech-label" x="1075" text-anchor="middle" y="314">Native SDK</text>
+      </g>
+    </g>
+
     <!-- Android phone, in the same scene order as devtiendang.blog. -->
     <g transform="translate(754 21) rotate(-1.8 98 171)" font-family="'Be Vietnam Pro', -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Helvetica, Arial, sans-serif">
       <rect x="195" y="55" width="3" height="30" rx="1.5" fill="#495154"/>
@@ -138,7 +278,7 @@
         <rect x="24.5" y="3" width="7" height="3.5" rx=".3" fill="#c9d5d5" stroke="none"/>
       </g>
 
-      <g class="phone-scene phone-scene--first" style="color:#8ce5fb">
+      <g class="phone-scene phone-scene--first tech-rn">
         <text class="phone-title" x="20" y="83">React Native</text>
         <text class="phone-copy" x="20" y="107">CRM interfaces for</text>
         <text class="phone-copy" x="20" y="125">iOS and Android.</text>
@@ -155,7 +295,7 @@
         <text class="phone-copy" x="20" y="287">both platforms</text>
       </g>
 
-      <g class="phone-scene" style="--start:4s;color:#8cbcf5">
+      <g class="phone-scene tech-ts">
         <text class="phone-title" x="20" y="83">TypeScript</text>
         <text class="phone-copy" x="20" y="107">Shared types for the blog</text>
         <text class="phone-copy" x="20" y="125">and its API.</text>
@@ -169,7 +309,7 @@
         <text class="phone-copy" x="20" y="269">Types used by the blog</text>
       </g>
 
-      <g class="phone-scene" style="--start:8s;color:#f2ba77">
+      <g class="phone-scene tech-java">
         <text class="phone-title" x="20" y="83">Woni Robot</text>
         <text class="phone-copy" x="20" y="107">Debugging the vendor SDK</text>
         <text class="phone-copy" x="20" y="125">on Woni’s Android tablet.</text>
@@ -191,7 +331,7 @@
         <text class="phone-copy" x="20" y="287">Vendor SDK</text>
       </g>
 
-      <g class="phone-scene" style="--start:12s;color:#a4d898">
+      <g class="phone-scene tech-nodejs">
         <text class="phone-title" x="20" y="83">ChatDVT</text>
         <text class="phone-copy" x="20" y="107">My Discord bot, built with</text>
         <text class="phone-copy" x="20" y="125">Node.js and Discord.js.</text>
@@ -205,7 +345,7 @@
         <text class="phone-copy" x="20" y="269">Replies back in Discord</text>
       </g>
 
-      <g class="phone-scene" style="--start:16s;color:#c8a8ff">
+      <g class="phone-scene tech-kotlin">
         <text class="phone-title" x="20" y="83">Kotlin</text>
         <text class="phone-copy" x="20" y="107">Run inference at capture</text>
         <text class="phone-copy" x="20" y="125">to keep preview responsive.</text>
@@ -220,7 +360,7 @@
         <text class="phone-copy" x="20" y="269">Results grouped by box</text>
       </g>
 
-      <g class="phone-scene" style="--start:20s;color:#88e5ad">
+      <g class="phone-scene tech-android">
         <text class="phone-title" x="20" y="83">Android</text>
         <text class="phone-copy" x="20" y="107">Upgrade for 16 KB</text>
         <text class="phone-copy" x="20" y="125">memory page sizes.</text>
@@ -236,7 +376,7 @@
         <text class="phone-copy" x="20" y="287">libraries</text>
       </g>
 
-      <g class="phone-scene" style="--start:24s;color:#80dfd1">
+      <g class="phone-scene tech-camerax">
         <text class="phone-title" x="20" y="83">CameraX</text>
         <text class="phone-copy" x="20" y="104">Captures with CameraX.</text>
         <text class="phone-copy" x="20" y="120">Finds boxes with TFLite.</text>
@@ -250,7 +390,7 @@
         <text class="phone-copy" x="20" y="287">in one image</text>
       </g>
 
-      <g class="phone-scene" style="--start:28s;color:#efcd89">
+      <g class="phone-scene tech-maven">
         <text class="phone-title" x="20" y="83">Native SDK</text>
         <text class="phone-copy" x="20" y="107">Versioned SDK releases</text>
         <text class="phone-copy" x="20" y="125">on private Repsy Maven.</text>
