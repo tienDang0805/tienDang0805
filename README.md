@@ -100,7 +100,7 @@
     </td>
     <td width="25%" valign="top">
       <p><sub><samp>02 // DIRECT EMAIL</samp></sub></p>
-      <p><a href="mailto:dvtien8599@gmail.com"><b>dvtien8599@gmail.com ↗</b></a></p>
+      <p><a href="mailto:dvtien0805@gmail.com"><b>dvtien8599@gmail.com ↗</b></a></p>
       <p><sub>Direct inbox for mobile roles &amp; project inquiries</sub></p>
     </td>
     <td width="25%" valign="top">
