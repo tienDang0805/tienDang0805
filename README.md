@@ -1,8 +1,10 @@
 <div align="center">
   <a href="https://devtiendang.blog">
-    <img src="./01-hero-baseline.svg" width="100%" alt="Dang Van Tien — Mobile dev 3.5 YOE , react native , android kotlin (devtiendang.blog)" />
+    <img src="./01-hero-baseline.svg" width="100%" alt="Đặng Văn Tiến — Mobile software engineer" />
   </a>
 </div>
+
+<p align="center"><strong>Mobile software engineer</strong> · Native Android (Kotlin) · React Native</p>
 
 <br />
 

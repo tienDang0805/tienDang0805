@@ -125,7 +125,7 @@
       </circle>
       <circle cx="8" cy="8" r="3.5" fill="#f3aa3c"/>
       <text x="24" y="12" fill="#f3aa3c" font-family="'Courier New', monospace" font-size="12" font-weight="700" letter-spacing="1.5">
-        DANG VAN TIEN · MOBILE DEV · HO CHI MINH CITY
+        DANG VAN TIEN · HO CHI MINH CITY
       </text>
 
       <!-- Main Two-Line Gradient Headline -->
@@ -140,7 +140,7 @@
       <g transform="translate(0, 150)">
         <rect width="468" height="38" rx="8" fill="#112220" stroke="#86e8da" stroke-opacity="0.5" stroke-width="1.2"/>
         <text x="14" y="24" fill="#86e8da" font-family="'Courier New', monospace" font-size="13.5" font-weight="700">
-          &gt; Mobile dev 3.5 YOE , react native , android kotlin
+          &gt; Mobile software engineer
         </text>
         <rect x="444" y="11" width="7" height="16" fill="#36f5ed">
           <animate attributeName="opacity" values="1;0;1" dur="1s" repeatCount="indefinite"/>
